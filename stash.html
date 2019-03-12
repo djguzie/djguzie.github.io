@@ -5,349 +5,431 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Jonathan Guzman</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stash.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif400,500,600,700,800|Poppins400,500,600,700,800,900" rel="stylesheet">
   </head>
   <body>
-    <main>
-      <header>
-        <a class="logo" href="index.html">jguzmanlogo</a>
-        <nav class="nav">
-              <a class="nav-item" href="about.html">about</a>
-              <a class="nav-item" href="index.html#projects">projects</a>
-              <a class="nav-item" href="resume.html">resume</a>
-              <a class="nav-item" href="contact.html">contact</a>
+    <div class="full-container">
+      <div class="container">
+        <!--Top Navigation-->
+        <nav class="navbar">
+          <a href="index.html"><img class="logo" src="/images/jguzmanlogo.svg" alt="JG"></a>
+          <input class="menu-btn" type="checkbox" id="menu-btn">
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="navLinks">
+              <li class="navlink"><a href="about.html">ABOUT</a></li>
+              <li class="navlink"><a href="#slides">PROJECTS</a></li>
+              <li class="navlink"><a href="mailto:jon.guzman@gmail.com">CONTACT</a></li>
+          </ul>
         </nav>
-      </header>
-      <section class="hero stash-hero">
-        <img src="/css/images/stash-macbook-iphone.svg">
-        <h1>Stash</h1>
-        <h5>Cloud storage is boring. Stash makes it fun.</h5>
-        <a href="https://invis.io/NQOKK2VRVK5">View prototype</a>
-      </section>
-      <section class="case-study">
-        <section class="summary_stash">
-          <h3>Summary</h3>
-          <p>Today memes, gifs, and funny videos, are their own unique form of
-          communication. And while Silicon Valley heatedly exchanges
-          spreadsheets and documents for the big meeting, millions of
-          other people share a silly picture becuase it's Throwback Thursday.
-          The goal of this project is to bridge the usability and ease of
-          cloud storage with all the intersting ways people communicate.
-          </p>
+        <section class="hero">
+          <img class="category-image" src="/images/stash-macbook-iphone.svg">
+          <h1>Stash</h1>
+          <h5>Cloud storage is boring. Stash makes it fun.</h5>
+          <a href="https://invis.io/NQOKK2VRVK5"><input class="CaseButton" type="button" value="VIEW PROTOTYPE"></a>
         </section>
-        <section class="problem_stash">
-          <h3>Problem</h3>
-          <p>Through my survey research and interviews, I found that some people
-            found their cloud storage options daunting. They associated these apps
-            as more "businessy". They also didn't think they could see a benefit
-            from them since they didn't use file storage daily. When I dove a bit
-            deeper I found that they did in fact use and send files daily, but
-            they didn't consider memes or gifs "files". They stockpiled them in
-            their text conversations, photo library and social media, but these
-            places made it hard to find the right file when they needed it the most.
-          </p>
-        </section>
-        <section class="solution_stash">
-          <h3>Solution</h3>
-          <p>Enter Stash.</p>
-          <p>Stash was created to store and organize the files people share and
-          store the most- pictures, gifs, memes, videos or anything else they
-          care about. It's easy to use, approachable and never takes itself too
-          seriously. It organizes content automatically or allows users to
-          do it for themselves. It's a modern solution for the even more modern
-          problem of having too much stuff.
-          </p>
-        </section>
-        <section class="image_stash">
-          <img src="/css/images/stash-3iphones.svg">
-        </section>
-        <section class="process_stash">
-          <h3>Process</h3>
-          <section class="user-surveys_stash">
-            <h4>User Surveys</h4>
-            <p>I created a user survey to determine what frustrates cloud storage users
-              and what they enjoy about the service. I also wanted to see if there was
-              something I could salvage from their current offerings, while potentially
-              discovering an unmet need.
+        <div class="case-study">
+          <section class="summary">
+            <h4>Summary</h4>
+            <p>Today memes, gifs, and funny videos, are their own unique form of
+            communication. And while Silicon Valley heatedly exchanges
+            spreadsheets and documents for the big meeting, millions of
+            other people share a silly picture becuase it's Throwback Thursday.
+            The goal of this project is to bridge the usability and ease of
+            cloud storage with all the intersting ways people communicate.
             </p>
-            <div class="info_card">
-              <h5> Survey Highlights</h5>
-              <ul>
-                <li>60% of surveyed users state “Easy to Use” as their top reason
-                for using their cloud storage app</li>
-                <li>83% of users value “Uploading Files” and “Category Organization”
-                as the most important feature for cloud storage</li>
-                <li>“Content Creation” ranked last in features users would enjoy</li>
-                <li>Almost half of survey partcipants state they hardly use cloud storage
-                outside of work </li>
-                <li>Nearly one fourth of participants stated they didn't use cloud storage
-                at all</li>
-              </ul>
-            </div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSecVJKKi132em-HmcEPl8v7N8R-dA_RNq4s4aWEJWjpaXNJTw/viewform?usp=sf_link" target="_blank"> View Survey</a>
           </section>
-          <section class="comp-analysis_stash">
-            <h4>Competetive Analysis</h4>
-            <p>The competitive analysis was also instrumental in uncovering
-              opportunities for my cloud storage application. Dropbox is too
-              enterprise focused, Google Drive has privacy concerns and Pinterest
-              although simple to use, does not support all file types. Using my
-              competitive analysis along with user survey data, I was able to combine
-              the best features of existing cloud storage, address their opportunities
-              and create an ideal solution: an approachable, easy to use application
-              that helped users categorize and upload their files. Until this point
-              I still believed I was creating a humdrum file storage application…
-              but this would soon change.</p>
-            <img src="/css/images/stash-companalysis.svg">
-            <a href="https://docs.google.com/document/d/1HpDdRaKMTTk-yKvYYytaJkBO_FSykhba-QiVgjrcVIk/edit?usp=sharing" target="_blank">View Comp Analysis</a>
+          <section class="problem">
+            <h4>Problem</h4>
+            <p>Through my survey research and interviews, I found that some people
+              found their cloud storage options daunting. They associated these apps
+              as more "businessy". They also didn't think they could see a benefit
+              from them since they didn't use file storage daily. When I dove a bit
+              deeper I found that they did in fact use and send files daily, but
+              they didn't consider memes or gifs "files". They stockpiled them in
+              their text conversations, photo library and social media, but these
+              places made it hard to find the right file when they needed it the most.
+            </p>
           </section>
-          <section class="user-personas_stash">
-            <h4>User Personas</h4>
-            <p>Now that my app had a series of broad features, it was time to
-              create some User Personas. Synthesizing this raw data helps
-              humanize the information into my potential audience for Stash.
-            <div class="persona">
-              <img src="/css/images/stash-persona1.svg">
-              <h5>Chloe</h5>
-              <p>Age: 22 / Single / Retail Specialist San Francisco, CA</p>
-              <h6> Motivations</h6>
-              <p>Chloe lives on her mobile device and relies on it for constant
-                communication with her friends. She loves Instagram and Snapchat
-                but stays away from iCloud. She often communicates with images,
-                gifs and memes with her friends that she saves from the internet.
-                But when it comes time to reply, sometimes she can’t find the
-                right file and ends up downloading or screenshotting the same
-                content over again. She recieves daily messages about her
-                storage being almost full.</p>
-              <h6>Frustrations</h6>
-              <p>Chloe is stressed from the daily chore of making space in her
-                phone because she takes too many screenshots. She is also weary
-                of storage applications. Often she is forgetful of where a file
-                is becuase she has to look in many places to find it.</p>
-              <h6>“I have so much stuff I don't know where any of it is”</h6>
-            </div>
-            <div class="persona">
-              <img src="/css/images/stash-persona2.svg">
-              <h5>Raymond</h5>
-              <p>Age: 29 / Single / Marketing Manager Oakland, CA</p>
-              <h6>Motivations</h6>
-              <p>Raymond is a marketing manager who leads a very busy life. He
-                has a team which he manages, and relies on them heavily to keep
-                tasks organized. With no time to cook, he is a big fan of the
-                convenience of food delivery apps and orders it several times a
-                week.  He would love to date more, but given his time commitments
-                in other areas and his career aspirations, he doesn’t currently
-                have the bandwidth.</p>
-              <h6>Frustrations</h6>
-              <p>Swamped with too many time commitments files pile up quickly
-                for Raymond. He ends up spending too much time looking for files
-                and organizing things. He wishes that his files could be organized
-                for him in some way</p>
-              <h6>“It would be amazing to get some time back and have things
-                work automatically”</h6>
+          <section class="solution">
+            <h4>Solution</h4>
+            <p>Enter Stash.</p>
+            <p>Stash was created to store and organize the files people share and
+            store the most- pictures, gifs, memes, videos or anything else they
+            care about. It's easy to use, approachable and never takes itself too
+            seriously. It organizes content automatically or allows users to
+            do it for themselves. It's a modern solution for the even more modern
+            problem of having too much stuff.
+            </p>
+          </section>
+          <section class="image_stash">
+            <img src="/images/stash-3iphones.png">
+          </section>
+          <section class="process">
+            <h4>Process</h4>
+            <section class="user-surveys_stash">
+              <h5>User Surveys</h5>
+              <p>I created a user survey to determine what frustrates cloud storage users
+                and what they enjoy about the service. I also wanted to see if there was
+                something I could salvage from their current offerings, while potentially
+                discovering an unmet need.
+              </p>
+              <div class="charts">
+                <h6> Survey Data </h6>
+                <canvas id="chart1"></canvas>
+                <canvas id="chart2"></canvas>
+              </div>
+              <div class="info_card">
+                <h6> Survey Highlights</h6>
+                <ul>
+                  <li>60% of surveyed users state “Easy to Use” as their top reason
+                  for using their cloud storage app</li>
+                  <li>83% of users value “Uploading Files” and “Category Organization”
+                  as the most important feature for cloud storage</li>
+                  <li>“Content Creation” ranked last in features users would enjoy</li>
+                  <li>Almost half of survey partcipants state they hardly use cloud storage
+                  outside of work </li>
+                  <li>Nearly one fourth of participants stated they didn't use cloud storage
+                  at all</li>
+                </ul>
+              </div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSecVJKKi132em-HmcEPl8v7N8R-dA_RNq4s4aWEJWjpaXNJTw/viewform?usp=sf_link" target="_blank"> View Survey</a>
+            </section>
+            <section class="comp-analysis_stash">
+              <h5>Competetive Analysis</h5>
+              <p>The competitive analysis was also instrumental in uncovering
+                opportunities for my cloud storage application. Dropbox is too
+                enterprise focused, Google Drive has privacy concerns and Pinterest
+                although simple to use, does not support all file types. Using my
+                competitive analysis along with user survey data, I was able to combine
+                the best features of existing cloud storage, address their opportunities
+                and create an ideal solution: an approachable, easy to use application
+                that helped users categorize and upload their files. Until this point
+                I still believed I was creating a humdrum file storage application…
+                but this would soon change.</p>
+              <img src="/images/stash-companalysis.svg">
+              <a href="https://docs.google.com/document/d/1HpDdRaKMTTk-yKvYYytaJkBO_FSykhba-QiVgjrcVIk/edit?usp=sharing" target="_blank">View Comp Analysis</a>
+            </section>
+            <section class="user-personas_stash">
+              <h5>User Personas</h5>
+              <p>Now that my app had a series of broad features, it was time to
+                create some User Personas. Synthesizing this raw data helps
+                humanize the information into my potential audience for Stash.
+              <div class="persona">
+                <img src="/images/stash-persona1.svg">
+                <h6>Chloe</h6>
+                <p>Age: 22 / Single / Retail Specialist San Francisco, CA</p>
+                <h6> Motivations</h6>
+                <p>Chloe lives on her mobile device and relies on it for constant
+                  communication with her friends. She loves Instagram and Snapchat
+                  but stays away from iCloud. She often communicates with images,
+                  gifs and memes with her friends that she saves from the internet.
+                  But when it comes time to reply, sometimes she can’t find the
+                  right file and ends up downloading or screenshotting the same
+                  content over again. She recieves daily messages about her
+                  storage being almost full.</p>
+                <h6>Frustrations</h6>
+                <p>Chloe is stressed from the daily chore of making space in her
+                  phone because she takes too many screenshots. She is also weary
+                  of storage applications. Often she is forgetful of where a file
+                  is becuase she has to look in many places to find it.</p>
+                <h6>“I have so much stuff I don't know where any of it is”</h6>
+              </div>
+              <div class="persona">
+                <img src="/images/stash-persona2.svg">
+                <h6>Raymond</h6>
+                <p>Age: 29 / Single / Marketing Manager Oakland, CA</p>
+                <h6>Motivations</h6>
+                <p>Raymond is a marketing manager who leads a very busy life. He
+                  has a team which he manages, and relies on them heavily to keep
+                  tasks organized. With no time to cook, he is a big fan of the
+                  convenience of food delivery apps and orders it several times a
+                  week.  He would love to date more, but given his time commitments
+                  in other areas and his career aspirations, he doesn’t currently
+                  have the bandwidth.</p>
+                <h6>Frustrations</h6>
+                <p>Swamped with too many time commitments files pile up quickly
+                  for Raymond. He ends up spending too much time looking for files
+                  and organizing things. He wishes that his files could be organized
+                  for him in some way</p>
+                <h6>“It would be amazing to get some time back and have things
+                  work automatically”</h6>
+              </div>
+            </section>
+            <section class="user-flows-and-stories_stash">
+              <h5>User Flows & User Stories</h5>
+              <p>Once the personas were fleshed out, I created some user stories
+                for first time and returning users to my app. I then mapped out
+                user flows for some of the most pressing features like account
+                on-boarding and uploading content.</p>
+              <img src="/images/stash-onboardingflow.png" style="width:100%;max-width:200px">
+              <img src="/images/stash-uploadingflow.png" style="width:100%;max-width:200px">
+              <a href="https://docs.google.com/spreadsheets/d/1Eol7MYdgvxf-PqJX7aNV3MlGyZK1VoPs5-vgPI5qiVQ/edit?usp=sharing" target="_blank">View User Stories</a>
+            </section>
+            <section class="wireframes_stash">
+              <h5>Wireframes</h5>
+              <p>Taking inventory of all the features, flows and personas I built
+                a basic functioning version of the site.  I wanted large page-wide
+                images with a focus on simplicity. Once the wireframes were done,
+                I made them clickable and created the first working version. I
+                conducted remote and in-person user tests that helped shaped
+                future iterations. One of the big takeaways from these tests was
+                that the flow for sharing and collaborating was nearly identical
+                and somewhat confusing. Humbled by the tests, I condensed that
+                flow into one process that could be either shared or collaborated
+                easily and wouldn’t confuse my users.</p>
+                <img src="/images/stash-wirehomepage.png" style="width:100%;max-width:200px">
+                <img src="/images/stash-wirefilemoved.png" style="width:100%;max-width:200px">
+                <img src="/images/stash-wiresharefile.png" style="width:100%;max-width:200px">
+                <a href="https://invis.io/AXN4HJVPKHM" target="_blank">View Wireframes</a>
+            </section>
+            <section class="branding_and-identity_stash">
+              <h5>Branding & Identity</h5>
+              <p>Once I hit the branding phase, the app really began to take
+                shape. I started my branding sketches focusing on the sharing
+                aspect and drew up many logo iterations. Since this was mainly
+                focused on the word “cloud,” feedback from some peers and industry
+                professionals urged me to focus on the storage aspect instead,
+                since users seemed to gel with this concept more. I used a mind
+                map, and a word association list and worked hard to create a name
+                that reminded people how easy it can be to store things. Below,
+                you can see how I ditched  “Breeze Bin” and “Cinch Stash” and went
+                with a much simpler name: Stash. Finally my app had a name!</p>
+              <img src="/images/stash-brandingsketches.svg">
+              <div class=logoconcept>
+                <img src="/images/stash-logoconcept1.svg">
+                <figcaption>Logo Concept 1</figcaption>
+              </div>
+              <div class="logoconcept">
+                <img src="/images/stash-logoconcept2.svg">
+                <figcaption>Logo Concept 2</figcaption>
+              </div>
+              <p>With both designs side by side, I made the decision to go with
+                concept #2 because it’s rounded font and drawer details
+                delivered on the friendly easy-going vibe I wanted for the
+                brand.<br> <br> Small changes then were made to the logo to help
+                tighten up the design. Below you can see slight changes to size
+                and kerning of the font, spacing of the words relative to the
+                drawer icon and shortening drawer width to match the length of
+                the words. They may seem like tiny changes, but these litte
+                details make a lasting impression that will represent the brand
+                of this company for years to come.</p>
+              <img src="/images/stash-logocompare.svg">
+              <p>To get a sense of certain aspects of the color, design, voice and
+                typography I created a style guide. I took care to choose a
+                primary color that was common in the cloud storage space like
+                navy blue, but secondary colors that made it easygoing and fun.
+                I took time to focus on the voice of Stash, as this is a pivotal
+                piece of what makes Stash different than other cloud storage
+                companies. While competitors seize an opportunity to focus on a
+                concrete goal for file storage (think collaborating for an end
+                goal, completing expense reports, etc..), Stash has a much
+                smaller goal: a place to store the stuff users care about so
+                that they can quickly find it and share it.</p>
+              <img src="/images/stash-styleguide.svg">
+              <a href="https://drive.google.com/open?id=1kvDnnSnq5lUx30kOT9xFnfboN9MdFI1b" target="_blank">View Style Guide</a>
+              <p>Rounding out the last bit of branding, I crafted a moodboard to
+                establish what users should feel when they visit the site or use
+                the app. Quirky and fun design inspirations helped convey the
+                important emotions- joy, playfulness, and fun</p>
+              <img src="/images/stash-moodboard1.png">
+              <img src="/images/stash-moodboard2.gif">
+              <img src="/images/stash-moodboard3.png">
+              <img src="/images/stash-moodboard4.gif">
+              <a href="https://projects.invisionapp.com/boards/U43N5H2JN7E/" target="_blank">View Moodboard</a>
+            </section>
+            <section class="user-testing_stash">
+              <h5>User Testing</h5>
+              <p>While the idea of Stash was good, preference testing and honest
+              feedback was essential in making big changes. Users told me when
+              they were confused, when they enjoyed something or when I flat out
+              missed the mark. Their feedback helped create significant changes.</p>
+              <div class="info_card">
+                <h6>User Test Highlights</h6>
+                <ul>
+                  <li>Added colored navigation bar on homepage to create some
+                    variety to the mostly white design</li>
+                  <li>Created more visually interesting graphics based on some
+                    users saying design was “too simple”</li>
+                  <li>Described some key features of Stash on homepage because some
+                    users didn’t quite understand what Stash did</li>
+                  <li>Shortened the size of the footer because it was quite large
+                    in comparison to the header</li>
+                  <li>Changed the placement of some of the navigation links to
+                    put more focus on sign in and sign up buttons</li>
+                  <li>Used color and placement more strategically to better highlight
+                    calls to action, error states and notifications</li>
+                  <li>Made a less obtrusive notification banner that appeared at
+                    the top of the page instead of the middle of the page</li>
+                  <li>Shrunk the sidebar and changed its color to maintain
+                    consitency across landing page and the dashboard</li>
+                  <li>Created more ways for users to change how they view their
+                    content in the dashboard</li>
+                </ul>
+              </div>
+              <div class="compare-images">
+                <img src="/images/stash-webhomepage1-2x.png" style="width:100%;max-width:200px">
+                <img src="/images/stash-webhomepage2-2x.png" style="width:100%;max-width:200px">
+                <img src="/images/stash-websignin1-2x.png" style="width:100%;max-width:200px">
+                <img src="/images/stash-websignin2-2x.png" style="width:100%;max-width:200px">
+                <img src="/images/stash-websignup1-2x.png" style="width:100%;max-width:200px">
+                <img src="/images/stash-websignup2-2x.png" style="width:100%;max-width:200px">
+                <img src="/images/stash-webdashboard1-2x.png" style="width:100%;max-width:200px">
+                <img src="/images/stash-webdashboard2-2x.png" style="width:100%;max-width:200px">
+              </div>
+              <a href="https://invis.io/NQOKK2VRVK5">View prototype</a>
+            </section>
+          </section>
+          <section class="conclusion">
+            <h4>Conclusion</h4>
+            <p>I wanted to create an app that was boring, basic and was a clone of
+              all the other cloud storage apps. I really did. Promise! But in the
+              process of trying to doing that, I actually began to care about a
+              real solution for the files that my users sent to each other.<br><br>
+              The biggest inspiration came from my own life and realizing that my
+              girlfriend although she said she did not need cloud storage used her
+              photo library and social media accounts to compile funny images to
+              send me. This process was cumbersome and she was not a daily user of
+              any of the big cloud storage companies. Another big inspiration was
+              social media as it seems that people share, screenshot and show each
+              other files more often- when was the last time someone close to you
+              sent you a spreadsheet that wasn’t work-related?<br><br>
+              If given more time I’d like to be able to make some of the sharing
+              aspects more ironed out. I focused a lot on the user persona of the
+              tech-averse person, but there is plenty of room to add functionality
+              for more robust sharing and collaboration. I also wanted to create a
+              place for comments once content was shared with someone. I
+              envisioned a quasi-social media space for files shared that could
+              create and spark even more conversation and shares. However my
+              biggest regret was not making this a mobile app. I have a few
+              mockups for a homepage and sign in, but given the social aspect of
+              sharing and how often people have their mobile devices with them, a
+              fully-featured mobile version makes the most sense.<br><br>
+              It was important to me to help people like my girlfriend and many
+              others, who use their devices to interact with those they care about.
+              While the client had specific ideas about collaboration, potential
+              users I surveyed had very different ideas about what they wanted out
+              of an app like this. I hope in the future I can help companies better
+              understand their users so that the products fit the user, and not
+              expecting the user to conform to how companies envision their product.</p>
+            <div class="back-to-top">
+              <a href="#"><img src="/images/back-chevron.png"><h6>Back to Top</h6></a>
             </div>
           </section>
-          <section class="user-flows-and-stories_stash">
-            <h4>User Flows & User Stories</h4>
-            <p>Once the personas were fleshed out, I created some user stories
-              for first time and returning users to my app. I then mapped out
-              user flows for some of the most pressing features like account
-              on-boarding and uploading content.</p>
-            <img src="/css/images/stash-onboardingflow.png" style="width:100%;max-width:200px">
-            <img src="/css/images/stash-uploadingflow.png" style="width:100%;max-width:200px">
-            <a href="https://docs.google.com/spreadsheets/d/1Eol7MYdgvxf-PqJX7aNV3MlGyZK1VoPs5-vgPI5qiVQ/edit?usp=sharing" target="_blank">View User Stories</a>
-          </section>
-          <section class="wireframes_stash">
-            <h4>Wireframes</h4>
-            <p>Taking inventory of all the features, flows and personas I built
-              a basic functioning version of the site.  I wanted large page-wide
-              images with a focus on simplicity. Once the wireframes were done,
-              I made them clickable and created the first working version. I
-              conducted remote and in-person user tests that helped shaped
-              future iterations. One of the big takeaways from these tests was
-              that the flow for sharing and collaborating was nearly identical
-              and somewhat confusing. Humbled by the tests, I condensed that
-              flow into one process that could be either shared or collaborated
-              easily and wouldn’t confuse my users.</p>
-              <img src="/css/images/stash-wirehomepage.png" style="width:100%;max-width:200px">
-              <img src="/css/images/stash-wirefilemoved.png" style="width:100%;max-width:200px">
-              <img src="/css/images/stash-wiresharefile.png" style="width:100%;max-width:200px">
-              <a href="https://invis.io/AXN4HJVPKHM" target="_blank">View Wireframes</a>
-          </section>
-          <section class="branding_and-identity_stash">
-            <h4>Branding & Identity</h4>
-            <p>Once I hit the branding phase, the app really began to take
-              shape. I started my branding sketches focusing on the sharing
-              aspect and drew up many logo iterations. Since this was mainly
-              focused on the word “cloud,” feedback from some peers and industry
-              professionals urged me to focus on the storage aspect instead,
-              since users seemed to gel with this concept more. I used a mind
-              map, and a word association list and worked hard to create a name
-              that reminded people how easy it can be to store things. Below,
-              you can see how I ditched  “Breeze Bin” and “Cinch Stash” and went
-              with a much simpler name: Stash. Finally my app had a name!</p>
-            <img src="/css/images/stash-brandingsketches.svg">
-            <div class=logoconcept>
-              <img src="/css/images/stash-logoconcept1.svg">
-              <figcaption>Logo Concept 1</figcaption>
-            </div>
-            <div class="logoconcept">
-              <img src="/css/images/stash-logoconcept2.svg">
-              <figcaption>Logo Concept 2</figcaption>
-            </div>
-            <p>With both designs side by side, I made the decision to go with
-              concept #2 because it’s rounded font and drawer details
-              delivered on the friendly easy-going vibe I wanted for the
-              brand.<br> <br> Small changes then were made to the logo to help
-              tighten up the design. Below you can see slight changes to size
-              and kerning of the font, spacing of the words relative to the
-              drawer icon and shortening drawer width to match the length of
-              the words. They may seem like tiny changes, but these litte
-              details make a lasting impression that will represent the brand
-              of this company for years to come.</p>
-            <img src="/css/images/stash-logocompare.svg">
-            <p>To get a sense of certain aspects of the color, design, voice and
-              typography I created a style guide. I took care to choose a
-              primary color that was common in the cloud storage space like
-              navy blue, but secondary colors that made it easygoing and fun.
-              I took time to focus on the voice of Stash, as this is a pivotal
-              piece of what makes Stash different than other cloud storage
-              companies. While competitors seize an opportunity to focus on a
-              concrete goal for file storage (think collaborating for an end
-              goal, completing expense reports, etc..), Stash has a much
-              smaller goal: a place to store the stuff users care about so
-              that they can quickly find it and share it.</p>
-            <img src="/css/images/stash-styleguide.svg">
-            <a href="https://drive.google.com/open?id=1kvDnnSnq5lUx30kOT9xFnfboN9MdFI1b" target="_blank">View Style Guide</a>
-            <p>Rounding out the last bit of branding, I crafted a moodboard to
-              establish what users should feel when they visit the site or use
-              the app. Quirky and fun design inspirations helped convey the
-              important emotions- joy, playfulness, and fun</p>
-            <img src="/css/images/stash-moodboard1.png">
-            <img src="/css/images/stash-moodboard2.gif">
-            <img src="/css/images/stash-moodboard3.png">
-            <img src="/css/images/stash-moodboard4.gif">
-            <a href="https://projects.invisionapp.com/boards/U43N5H2JN7E/" target="_blank">View Moodboard</a>
-          </section>
-          <section class="user-testing_stash">
-            <h4>User Testing</h4>
-            <p>While the idea of Stash was good, preference testing and honest
-            feedback was essential in making big changes. Users told me when
-            they were confused, when they enjoyed something or when I flat out
-            missed the mark. Their feedback helped create significant changes.</p>
-            <div class="info_card">
-              <h5>User Test Highlights</h5>
-              <ul>
-                <li>Added colored navigation bar on homepage to create some
-                  variety to the mostly white design</li>
-                <li>Created more visually interesting graphics based on some
-                  users saying design was “too simple”</li>
-                <li>Described some key features of Stash on homepage because some
-                  users didn’t quite understand what Stash did</li>
-                <li>Shortened the size of the footer because it was quite large
-                  in comparison to the header</li>
-                <li>Changed the placement of some of the navigation links to
-                  put more focus on sign in and sign up buttons</li>
-                <li>Used color and placement more strategically to better highlight
-                  calls to action, error states and notifications</li>
-                <li>Made a less obtrusive notification banner that appeared at
-                  the top of the page instead of the middle of the page</li>
-                <li>Shrunk the sidebar and changed its color to maintain
-                  consitency across landing page and the dashboard</li>
-                <li>Created more ways for users to change how they view their
-                  content in the dashboard</li>
-              </ul>
-            </div>
-            <div class="compare-images">
-              <img src="/css/images/stash-webhomepage1-2x.png" style="width:100%;max-width:200px">
-              <img src="/css/images/stash-webhomepage2-2x.png" style="width:100%;max-width:200px">
-              <img src="/css/images/stash-websignin1-2x.png" style="width:100%;max-width:200px">
-              <img src="/css/images/stash-websignin2-2x.png" style="width:100%;max-width:200px">
-              <img src="/css/images/stash-websignup1-2x.png" style="width:100%;max-width:200px">
-              <img src="/css/images/stash-websignup2-2x.png" style="width:100%;max-width:200px">
-              <img src="/css/images/stash-webdashboard1-2x.png" style="width:100%;max-width:200px">
-              <img src="/css/images/stash-webdashboard2-2x.png" style="width:100%;max-width:200px">
-            </div>
-            <a href="https://invis.io/NQOKK2VRVK5">View prototype</a>
-          </section>
-        </section>
-        <section class="conclusion">
-          <h4>Conclusion</h4>
-          <p>I wanted to create an app that was boring, basic and was a clone of
-            all the other cloud storage apps. I really did. Promise! But in the
-            process of trying to doing that, I actually began to care about a
-            real solution for the files that my users sent to each other.<br><br>
-            The biggest inspiration came from my own life and realizing that my
-            girlfriend although she said she did not need cloud storage used her
-            photo library and social media accounts to compile funny images to
-            send me. This process was cumbersome and she was not a daily user of
-            any of the big cloud storage companies. Another big inspiration was
-            social media as it seems that people share, screenshot and show each
-            other files more often- when was the last time someone close to you
-            sent you a spreadsheet that wasn’t work-related?<br><br>
-            If given more time I’d like to be able to make some of the sharing
-            aspects more ironed out. I focused a lot on the user persona of the
-            tech-averse person, but there is plenty of room to add functionality
-            for more robust sharing and collaboration. I also wanted to create a
-            place for comments once content was shared with someone. I
-            envisioned a quasi-social media space for files shared that could
-            create and spark even more conversation and shares. However my
-            biggest regret was not making this a mobile app. I have a few
-            mockups for a homepage and sign in, but given the social aspect of
-            sharing and how often people have their mobile devices with them, a
-            fully-featured mobile version makes the most sense.<br><br>
-            It was important to me to help people like my girlfriend and many
-            others, who use their devices to interact with those they care about.
-            While the client had specific ideas about collaboration, potential
-            users I surveyed had very different ideas about what they wanted out
-            of an app like this. I hope in the future I can help companies better
-            understand their users so that the products fit the user, and not
-            expecting the user to conform to how companies envision their product.</p>
-          <a href="#">^Back to Top</a>
-        </section>
-      </section>
-      <section class="other projects">
-        <div class="mini-project">
-          <h3>Nintendo E-Shop</h3>
-          <a href="nintendo.html">Learn More</a>
         </div>
-        <div class="mini-project">
-          <h3>Bloc Jams</h3>
-          <a href="blocjams.html">Learn More</a>
-        </div>
-      </section>
+        <section class="other projects">
+          <div class="mini-project">
+            <h3>Nintendo E-Shop</h3>
+            <a href="nintendo.html">Learn More</a>
+          </div>
+          <div class="mini-project">
+            <h3>Bloc Jams</h3>
+            <a href="blocjams.html">Learn More</a>
+          </div>
+        </section>
       <footer>
-        <section class="jayquote">
-          <h6>You could have been anywhere in the world,
-          <br>but you're here with me.<br>
-          I appreciate that.<br>
-          <strong>Jay-Z</strong></h6>
-        </section>
-        <h5> Wanna talk UX? Question about a project? Favorite rap lyric
-        you wanna share? Great! Find me at my favorite web hangouts
-        below and let's connect.</h5>
-        <ul class="socials">
-          <li>
-            <a href="contact.html"><i class="fas fa-envelope"></i></a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/jguzmandesign" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="https://www.github.com/djguzie" target="_blank"><i class="fab fa-github-alt"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/jguzmandesign" target="_blank"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@jguzmandesign" target="_blank"><i class="fab fa-medium-m"></i></a>
-          </li>
-        </ul>
-        <p class="copyright">
-          © 2019 Jonathan Guzman  |  designed and developed by Jonathan Guzman
-        </p>
+          <div class="quote">
+            <section class="quotebox">
+              <h6>"You could have been anywhere in the world, but you're here with me. I appreciate that."</h6>
+              <h6 class="boldh6"><strong>Jay-Z</strong></h6>
+            </section>
+          </div>
+          <section class="wannatalk">
+            <h5> Wanna talk UX? Question about a project? Favorite rap lyric
+            you wanna share? Great! Find me at my favorite web hangouts
+            below and let's connect.</h5>
+          </section>
+          <ul class="socials">
+              <li><a href="mailto:jon.guzman@gmail.com"><i class="fas fa-envelope"></i></a></li>
+              <li><a href="https://linkedin.com/in/jguzmandesign" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.github.com/djguzie" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+              <li><a href="https://twitter.com/jguzmandesign" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://medium.com/@jguzmandesign" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+          </ul>
+          <p class="copyright">© 2019 Jonathan Guzman  |  designed and developed by Jonathan Guzman</p>
       </footer>
-    </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script>
+        var ctx = document.getElementById("chart1").getContext('2d');
+        var chart1 = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Ease of Use", "Cost", "Sharing", "Mobile App", "How it Looks", "Storage"],
+                datasets: [{
+                    label: 'Top Feature for Cloud Users',
+                    data: [35, 20, 20, 12, 7,  7],
+                    backgroundColor: [
+
+                        'rgba(28, 43, 98, 1.0)',
+                        'rgba(28, 43, 98, 0.3)',
+                        'rgba(28, 43, 98, 0.3)',
+                        'rgba(28, 43, 98, 0.3)',
+                        'rgba(28, 43, 98, 0.3)',
+                        'rgba(28, 43, 98, 0.3)'
+                    ],
+                    // borderColor: [
+                    //     'red',
+                    //     'rgba(54, 162, 235, 1)',
+                    //     'rgba(255, 206, 86, 1)',
+                    //     'rgba(75, 192, 192, 1)',
+                    //     'rgba(153, 102, 255, 1)',
+                    //     'rgba(255, 159, 64, 1)'
+                    // ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                      scaleLabel: {
+                        display: true,
+                        labelString: '# of votes'
+                }
+                    }]
+                }
+            }
+
+        });
+        </script>
+        <script>
+        var ctx = document.getElementById("chart2").getContext('2d');
+        var chart1 = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Organize", "Upload", "Save", "Share", "No Account", "Create"],
+                datasets: [{
+                    label: 'Most Important Feature for Potential Users',
+                    data: [83, 83, 54, 54, 50, 46],
+                    backgroundColor: [
+
+                        'rgba(28, 43, 98, 1.0)',
+                        'rgba(28, 43, 98, 1.0)',
+                        'rgba(28, 43, 98, 0.3)',
+                        'rgba(28, 43, 98, 0.3)',
+                        'rgba(28, 43, 98, 0.3)',
+                        'rgba(28, 43, 98, 0.3)'
+                    ],
+                    // borderColor: [
+                    //     'red',
+                    //     'rgba(54, 162, 235, 1)',
+                    //     'rgba(255, 206, 86, 1)',
+                    //     'rgba(75, 192, 192, 1)',
+                    //     'rgba(153, 102, 255, 1)',
+                    //     'rgba(255, 159, 64, 1)'
+                    // ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                    }]
+                }
+            }
+
+        });
+
+        </script>
   </body>
 </html>

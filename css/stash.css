@@ -149,77 +149,28 @@ a {
  top: 0;
 }
 
-/*hero stuff*/
+/* <!--HERO--> */
 .hero {
-  padding: 10rem 1.6rem;
-  max-width:100%;
+  padding: 8rem 0;
+
 }
 
-.hero h5{
-  width: 85%;
-  padding-top: 4rem;
+.hero .CaseButton {
+  margin: 4rem auto;
 }
 
-/* Case tudy slides! */
+/*----CASE STUDY TIME-----*/
 
-main {
+section .summary, .problem, .solution, .process, .conclusion {
+  padding:8rem 0;
+  width:100%;
+}
+
+section img {
+  width:100%;
   margin: 0 auto;
-}
-
-.stash {
-  margin: 0 auto;
-}
-
-.slidewrapper img {
-  margin: 0 auto;
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.stash, .nintendo, .blocjams, h2 h3 {
-  color: #fbfbfb;
-}
-
-.stash h2, h3 {
-  margin: 1rem 0;
-}
-
-section .project {
-  padding: 1rem 1.6rem 2rem 1.6rem;
-}
-
-.stash {
-  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.stash .case_slide {
-  height: 37.5rem;
   object-fit: cover;
 }
-
-.nintendo {
-  background: linear-gradient(180deg, #FA9A1F 80%, rgba(250, 228, 31, 0) 120%);
-}
-
-.nintendo .case_slide {
-  height: 37.5rem;
-  position: relative;
-  object-fit: cover;
-}
-
-.blocjams {
-  background: linear-gradient(180deg, #D6423E 22.72%, #612854 110.86%);
-}
-
-.blocjams .case_slide {
-  object-fit: cover;
-  height: 37.5rem;
-
-}
-
 .CaseButton {
   cursor:pointer;
   display: flex;
@@ -239,6 +190,35 @@ section .project {
 }
 
 
+.image_stash {
+  background: linear-gradient(180deg, #D6423E 22.72%, #612854 110.86%);
+}
+
+.charts {
+  background-color: #fbfbfb;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  padding: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  width:90%;
+  position: relative;
+  margin: auto;
+}
+
+.charts h6 {
+  margin: auto;
+  padding: 2rem 0;
+
+}
+#chart1, #chart2 {
+  padding:1rem 0;
+}
+
+.info_card li {
+  font-size:
+}
+
+
 /* <!--Typgraphy--> */
 
 h1, h2, h3, h4, h5, h6 {
@@ -246,12 +226,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: #E06D69;
+  color: #1c1c1c;
   font-family: Poppins, sans-serif;
   font-size: 5rem;
   font-weight: bold;
   line-height: 56px;
   letter-spacing: -0.02em;
+  text-align: center;
 }
 
 h2 {
@@ -271,26 +252,31 @@ h4 {
   font-size: 2.65rem;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
   text-transform: uppercase;
+  padding: 0 0 2rem 0;
 }
 
 h5 {
   font-size: 2.125rem;
   line-height: normal;
+  padding:0 0 2rem 0;
+  text-align: center;
 }
 
 h6 {
   font-size: 1.7rem;
+  font-weight: 600;
   text-align: center;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 p {
   font-family: 'PT Serif', serif;
+  padding: 2rem 1.6rem;
   font-size: 1.8rem;
-  line-height: 1.25rem;
-  margin: 1rem 1rem 1rem 0;
+  line-height: 3rem;
 }
 
 strong{
@@ -299,26 +285,18 @@ strong{
 
 /* <!--QUOTE--> */
 
-.quotebox {
-  display: flex;
-  background-color: #fbfbfb;
-  border-radius: 5px;
-  margin: 1.6rem;
-  padding: 3.2rem 2.2rem;
-  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-  min-width: 25rem;
-  max-width: 37rem;
+footer .quote {
+  margin:5rem;
   position: relative;
 }
 
 .quote h6 {
-  padding:1.6rem;
+  margin:1.6rem;
 }
 
 .boldh6 {
-  text-align: right;
+  float:right;
   margin: 1rem;
-  max-width:;
 }
 
 .wannatalk {
@@ -341,11 +319,6 @@ strong{
   transition: all 0.3s ease-in-out;
 }
 
-.socials li a:hover {
-  color: #E06D69;
-  cursor:pointer;
-}
-
 .copyright {
   font-size: 1rem;
   text-align: center;
@@ -355,24 +328,31 @@ footer {
   margin: 5rem 0 2rem; 0;
   width:100%
 }
-/* .conclusion {
+
+.conclusion {
   background-color: #1c1c1c;
-  color:#fbfbfb; */
+  color:#fbfbfb;
+  position: relative;
 }
 
-/* .mini-project {
-  margin:1rem 0;
+/* .conclusion a {
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 10rem;
 } */
 
-
-@media screen and (min-width:768px) {
-  .main {
-    width: 70rem;
-  }
+.back-to-top img{
+  max-width: 35px;
+  margin: 0 auto;
 }
 
-@media screen and (min-width:1000px) {
-  .main {
-    width: 90rem;
+.mini-project {
+  margin:1rem 0;
+}
+
+@@media only screen and (min-width: 768px){
+  .charts {
+    width: 50%;
   }
 }
