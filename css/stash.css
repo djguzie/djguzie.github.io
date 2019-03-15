@@ -17,6 +17,7 @@ body {
 
 a {
   all: unset;
+  cursor: pointer;
 }
 
 .welcome-wrapper {
@@ -161,7 +162,7 @@ a {
 
 /*----CASE STUDY TIME-----*/
 
-section .summary, .problem, .solution, .process, .conclusion {
+.summary, .problem, .solution, .process, .conclusion {
   padding:8rem 0;
   width:100%;
 }
@@ -171,7 +172,13 @@ section img {
   margin: 0 auto;
   object-fit: cover;
 }
+
+.button {
+  width:100%;
+}
+
 .CaseButton {
+  border-style: none;
   cursor:pointer;
   display: flex;
   background-color: #E06D69;
@@ -189,7 +196,6 @@ section img {
   -webkit-appearance: none;
 }
 
-
 .image_stash {
   background: linear-gradient(180deg, #D6423E 22.72%, #612854 110.86%);
 }
@@ -197,7 +203,7 @@ section img {
 .charts {
   background-color: #fbfbfb;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-  padding: 1.6rem;
+  padding: 2rem 1.6rem;
   display: flex;
   flex-wrap: wrap;
   width:90%;
@@ -210,14 +216,223 @@ section img {
   padding: 2rem 0;
 
 }
-#chart1, #chart2 {
-  padding:1rem 0;
+#chart1, #chart2, #chart3 {
+  padding:0rem 0;
 }
 
+.info_card {
+  top:4rem;
+  background-color: #fbfbfb;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  padding: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  width:90%;
+  position: relative;
+  margin: auto;
+}
+
+.info_card h6 {
+  padding: 2rem 0;
+  margin: auto;
+}
 .info_card li {
-  font-size:
+  padding:1.6rem;
 }
 
+.user-surveys .CaseButton {
+  margin: 8rem auto;
+  background-color: #52B098;
+}
+
+.comp-analysis .info_card img {
+  display: flex;
+  margin: auto;
+  width: 100px;;
+  max-width: 300px;
+}
+
+.comp-analysis .info_card h6 {
+  margin:0 auto;
+  width:100%;
+}
+
+.comp-analysis .info_card p {
+  width:100%;
+  margin: auto;
+}
+
+.comp-analysis .CaseButton {
+  margin: 8rem auto;
+  background-color: #52B098;
+}
+
+.user-personas .info_card {
+  margin-bottom: 4rem;
+}
+
+.user-personas .info_card img {
+  display: flex;
+  margin: auto;
+  width: 100px;;
+  max-width: 300px;
+}
+
+.user-personas .info_card h6 {
+  margin:0 auto;
+  width:100%;
+}
+
+.user-personas .info_card p {
+  width:100%;
+  font-size: 1.4rem;
+  margin: auto;
+  padding: 0;
+}
+
+p.smalldetails {
+  line-height: 2rem;
+}
+
+.personah6 {
+  /* opacity: 0.8; */
+  font-size: 1.4rem;
+  letter-spacing: 0.0em;
+}
+
+.user-flows-and-stories {
+  padding-top: 4rem;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-wrapper {
+  margin-top:4rem;
+}
+
+.swiper-slide img{
+  margin:0 auto;
+  width:100%;
+  max-width:800px;
+}
+
+.user-flows-and-stories .CaseButton {
+  margin: 4rem auto 0 auto;
+  background-color: #52B098;
+}
+
+.wireframes {
+  padding-top:8rem;
+}
+
+.wireframes .CaseButton {
+  margin: 4rem auto 0 auto;
+  background-color: #52B098;
+}
+
+.branding_and_identity {
+  padding-top:8rem;
+}
+
+.branding_and_identity img{
+  margin: 4rem 0;
+}
+
+.logo-wrapper {
+  width:100%;
+  display:flex;
+}
+
+.logoconcept {
+  width:45%;
+  margin: 0 2rem;
+}
+
+.logoconcept img{
+  margin:2rem 0;
+  max-width:300px;
+}
+
+.logoconcept figcaption {
+  text-align:center;
+  margin-bottom:2rem;
+}
+
+.compare-images {
+  text-align:center;
+}
+
+.compare-images img {
+  max-width: 500px;
+}
+
+.branding_and_identity .CaseButton {
+  margin: 0 auto 4rem;
+}
+
+.flex-moodboard {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  /* background-color: #fbfbfb; */
+}
+
+.flex-moodboard img {
+  margin: 0 auto;
+}
+
+.hifi-comparison {
+  margin-top:8rem;
+}
+
+.hifi-comparison .info_card{
+  display:flex;
+  flex-wrap:wrap;
+  margin:4rem auto;
+}
+
+.hifi-comparison .info_card img {
+  flex:50%;
+  max-width:45%;
+  object-fit: contain;
+}
+
+.hifi-comparison .info_card h6 {
+  text-align: center;
+  width:100%;
+}
+
+.user-testing .CaseButton{
+  margin: 8rem auto 0;
+}
+
+.conclusion {
+  background-color: #1c1c1c;
+  color:#fbfbfb;
+  position: relative;
+}
+
+/* .conclusion a {
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 10rem;
+} */
+
+.back-to-top {
+  text-align: center;
+  margin-top:4rem;
+}
+
+.chevronstuff {
+  display:inline-block;
+}
+
+.back-to-top img{
+  max-width: 35px;
+}
 
 /* <!--Typgraphy--> */
 
@@ -283,26 +498,122 @@ strong{
   font-weight:bold;
 }
 
-/* <!--QUOTE--> */
+/*-----OTHER PROJECTS SECTION------*/
+.other-projects {
+  width:100%;
+}
 
-footer .quote {
-  margin:5rem;
+.nintendo h2, .blocjams h2 {
+}
+
+.nintendo {
+  background-image: url("/images/nintendo-mini-banner.png");
+  background-color: #FA9A1F;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200px;
+  position: relative;
+  width: 100%;
+}
+
+.nintendo-text {
+  margin: 0 1.6rem;
+  position: relative;
+  top: 10%;
+  left: 34%;
+  width:50%;
+  color: #fbfbfb;
+}
+.other-projects .CaseButton {
+  margin: 2rem 0 4rem;
+  position: relative;
+  right:0%;
+}
+
+.blocjams {
+  background-image: url("/images/blocjams-mini-banner.png");
+  background-color: #D6423E;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200px;
+  position: relative;
+  width:100%;
+}
+
+.blocjams-text {
+  margin: 0 1.6rem;
+  position: relative;
+  top: 30%;
+  left: 0%;
+  width:60%;
+  color: #fbfbfb;
+}
+
+/* .nintendo img {
+  object-fit: cover;
+} */
+/* .mini-project-words {
+  position: absolute;
+  bottom:1rem;
+  margin: 1rem 1.6rem;
+} */
+
+/* .mini-project-words h2 {
+  max-width:60%;
+  width:40%;
+} */
+
+/* .mini-project-wrapper img {
+  object-fit: cover;
+  position: relative;
+} */
+
+/* .blocjams {
+  height:200px;
+  color: #fbfbfb;
+} */
+
+
+/* <!--FOOTER--> */
+footer {
+  margin: 5rem 0 2rem; 0;
+  width:100%
+}
+
+.quotebox {
+  display: flex;
+  flex-wrap:wrap;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  margin: 1.6rem;
+  padding: 2rem 1rem;
+  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
+  min-width: 25rem;
+  max-width: 37rem;
   position: relative;
 }
 
-.quote h6 {
-  margin:1.6rem;
+.quotebox h6 {
+  width:100%;
+  font-weight: 400;
 }
 
 .boldh6 {
-  float:right;
+  text-align: right;
   margin: 1rem;
+  max-width:;
 }
 
 .wannatalk {
   padding: 3.2rem;
   max-width: 60rem;
   margin:0 auto;
+}
+
+.wannatalk h5 {
+  text-align: left;
 }
 
 .socials {
@@ -319,36 +630,16 @@ footer .quote {
   transition: all 0.3s ease-in-out;
 }
 
+.socials li a:hover {
+  color: #E06D69;
+  cursor:pointer;
+}
+
 .copyright {
   font-size: 1rem;
   text-align: center;
-}
-
-footer {
-  margin: 5rem 0 2rem; 0;
-  width:100%
-}
-
-.conclusion {
-  background-color: #1c1c1c;
-  color:#fbfbfb;
-  position: relative;
-}
-
-/* .conclusion a {
-  cursor: pointer;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 10rem;
-} */
-
-.back-to-top img{
-  max-width: 35px;
-  margin: 0 auto;
-}
-
-.mini-project {
-  margin:1rem 0;
+  margin: 1rem 1rem 1rem 0;
+  padding: 0;
 }
 
 @@media only screen and (min-width: 768px){
