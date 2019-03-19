@@ -22,15 +22,12 @@ a {
 
 .welcome-wrapper {
   width:100%;
+  max-width: 120rem;
+  margin: auto;
 }
 
 .full-container {
   width:100%;
-  margin: auto;
-}
-
-.container {
-  max-width: 120rem;
   margin: auto;
 }
 
@@ -181,6 +178,8 @@ section img {
   border-style: none;
   cursor:pointer;
   display: flex;
+  min-width: 20rem;
+  flex-wrap:wrap;
   background-color: #E06D69;
   color: #fbfbfb;
   margin: 3rem 5rem 5rem 0;
@@ -195,6 +194,30 @@ section img {
   text-transform: uppercase;
   -webkit-appearance: none;
 }
+
+/* .CaseButton {
+
+  display: flex;
+
+  width:20rem;
+  height:auto;
+  background-color: #E06D69;
+  border-style: none;
+  color: #fbfbfb;
+  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
+  margin: 3rem 5rem 5rem 0;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  justify-content: space-around;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+} */
 
 .image_stash {
   background: linear-gradient(180deg, #D6423E 22.72%, #612854 110.86%);
@@ -551,82 +574,55 @@ strong{
   color: #fbfbfb;
 }
 
-/* .nintendo img {
-  object-fit: cover;
-} */
-/* .mini-project-words {
-  position: absolute;
-  bottom:1rem;
-  margin: 1rem 1.6rem;
-} */
-
-/* .mini-project-words h2 {
-  max-width:60%;
-  width:40%;
-} */
-
-/* .mini-project-wrapper img {
-  object-fit: cover;
-  position: relative;
-} */
-
-/* .blocjams {
-  height:200px;
-  color: #fbfbfb;
-} */
-
-
 /* <!--FOOTER--> */
+
 footer {
-  margin: 5rem 0 2rem; 0;
-  width:100%
+  margin: 5rem 0 2rem;
+  width:100%;
+  padding: 0 1.6rem;
 }
 
 .quotebox {
   display: flex;
   flex-wrap:wrap;
   background-color: #fbfbfb;
-  border-radius: 5px;
-  margin: 1.6rem;
-  padding: 2rem 1rem;
-  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-  min-width: 25rem;
-  max-width: 37rem;
+  /* border-radius: 5px; */
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
+  width: 100%;
+  max-width: 60rem;
   position: relative;
 }
 
 .quotebox h6 {
   width:100%;
-  font-weight: 400;
 }
 
 .boldh6 {
   text-align: right;
-  margin: 1rem;
-  max-width:;
+  padding-right: 1rem;
 }
 
 .wannatalk {
-  padding: 3.2rem;
+  padding: 4rem 0;
+  width:100%;
   max-width: 60rem;
   margin:0 auto;
-}
 
-.wannatalk h5 {
-  text-align: left;
 }
 
 .socials {
   display:flex;
   font-size: 24px;
   margin: 0 auto;
+  max-width:60rem;
 }
 
 .socials li {
-  padding: 2rem;
-  flex-wrap: wrap;
+  padding: 0 0 2rem;
   width:20%;
-  text-align:center;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
@@ -638,9 +634,8 @@ footer {
 .copyright {
   font-size: 1rem;
   text-align: center;
-  margin: 1rem 1rem 1rem 0;
-  padding: 0;
 }
+
 
 @@media only screen and (min-width: 768px){
   .charts {

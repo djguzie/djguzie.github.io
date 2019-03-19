@@ -21,6 +21,8 @@ a {
 
 .welcome-wrapper {
   width:100%;
+  max-width: 120rem;
+  margin: auto;
 }
 
 .full-container {
@@ -28,10 +30,10 @@ a {
   margin: auto;
 }
 
-.container {
-  max-width: 120rem;
+/* .container {
+  max-width: 100rem;
   margin: auto;
-}
+} */
 
 /*Header stuff*/
 .navbar {
@@ -63,7 +65,7 @@ a {
   width: 4rem;
 }
 
-.navbar li a:hover, .navbar .menu-btn:hover {
+.navbar li a:hover {
   color: #E06D69;
 }
 
@@ -80,7 +82,7 @@ a {
     max-height: 0rem;
     transition: .3s ease-in-out;
     text-align: right;
-    z-index: 9;
+    z-index: 1;
 }
 
 /*MENU ICON*/
@@ -160,81 +162,88 @@ a {
   padding-top: 4rem;
 }
 
-/* Case tudy slides! */
+/* ------Case study section!------- */
 
 main {
   margin: 0 auto;
 }
 
-.stash {
-  margin: 0 auto;
+.projects {
+  width:100%;
 }
 
-.slidewrapper img {
-  margin: 0 auto;
-  position: relative;
-  width: 100%;
-  height: auto;
+.project-grid {
+  display: grid;
+  grid-template-columns: 6fr;
+  grid-template-areas:
+  "project-pic"
+  "project-info";
 }
 
-.stash, .nintendo, .blocjams, h2 h3 {
-  color: #fbfbfb;
+.project-pic {
+  width: 37.5rem;
+  max-width: 60rem;
 }
 
-.stash h2, h3 {
-  margin: 1rem 0;
-}
-
-section .project {
+.project-info {
   padding: 1rem 1.6rem 2rem 1.6rem;
 }
 
-.stash {
+.stash .project-grid {
   background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-.stash .case_slide {
-  height: 37.5rem;
+.stash .project-pic {
   object-fit: cover;
+  padding: 2rem 1.6rem;
 }
 
 .nintendo {
   background: linear-gradient(180deg, #FA9A1F 80%, rgba(250, 228, 31, 0) 120%);
 }
 
-.nintendo .case_slide {
+.nintendo .project-pic {
   height: 37.5rem;
   position: relative;
   object-fit: cover;
+  object-position: -24rem;
 }
 
 .blocjams {
   background: linear-gradient(180deg, #D6423E 22.72%, #612854 110.86%);
 }
 
-.blocjams .case_slide {
-  object-fit: cover;
+.blocjams .project-pic {
+  /* object-fit: cover; */
+  object-fit:contain;
+  padding: 2rem 1.6rem;
   height: 37.5rem;
+  object-position: 0 8rem;;
 
 }
 
 .CaseButton {
   cursor:pointer;
   display: flex;
+  flex-wrap:wrap;
+  min-width:20rem;
+  height:auto;
   background-color: #E06D69;
   border-style: none;
   color: #fbfbfb;
+  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
   margin: 3rem 5rem 5rem 0;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2rem;
   text-decoration: none;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
   text-align: center;
-  letter-spacing: 0.07em;
+  justify-content: space-around;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   -webkit-appearance: none;
 }
@@ -260,12 +269,15 @@ h2 {
   font-weight:600;
   line-height: 42px;
   letter-spacing: -0.02em;
+  color: #fbfbfb;
 }
 
 h3 {
   font-size: 3.3rem;
   line-height: 37px;
   letter-spacing: -0.02em;
+  color: #fbfbfb;
+  font-weight:350;
 }
 
 h4 {
@@ -283,8 +295,9 @@ h5 {
 h6 {
   font-size: 1.7rem;
   text-align: center;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  line-height: 2.5rem;
 }
 
 p {
@@ -300,16 +313,22 @@ strong{
 
 /* <!--QUOTE--> */
 
+footer {
+  margin: 5rem 0 2rem;
+  width:100%;
+  padding: 0 1.6rem;
+}
+
 .quotebox {
   display: flex;
   flex-wrap:wrap;
   background-color: #fbfbfb;
-  border-radius: 5px;
-  margin: 1.6rem;
-  padding: 2rem 1rem;
-  filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
-  min-width: 25rem;
-  max-width: 37rem;
+  /* border-radius: 5px; */
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
+  width: 100%;
+  max-width: 60rem;
   position: relative;
 }
 
@@ -319,27 +338,28 @@ strong{
 
 .boldh6 {
   text-align: right;
-  margin: 1rem;
-  max-width:;
+  padding-right: 1rem;
 }
 
 .wannatalk {
-  padding: 3.2rem;
+  padding: 4rem 0;
+  width:100%;
   max-width: 60rem;
   margin:0 auto;
+
 }
 
 .socials {
   display:flex;
   font-size: 24px;
   margin: 0 auto;
+  max-width:60rem;
 }
 
 .socials li {
-  padding: 2rem;
-  flex-wrap: wrap;
+  padding: 0 0 2rem;
   width:20%;
-  text-align:center;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
@@ -352,19 +372,6 @@ strong{
   font-size: 1rem;
   text-align: center;
 }
-
-footer {
-  margin: 5rem 0 2rem; 0;
-  width:100%
-}
-/* .conclusion {
-  background-color: #1c1c1c;
-  color:#fbfbfb; */
-}
-
-/* .mini-project {
-  margin:1rem 0;
-} */
 
 
 @media screen and (min-width:768px) {
