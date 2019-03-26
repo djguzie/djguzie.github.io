@@ -19,235 +19,16 @@ a {
   all: unset;
 }
 
-.welcome-wrapper {
-  width:100%;
-  max-width: 120rem;
-  margin: auto;
-}
-
 .full-container {
   width:100%;
-  margin: auto;
-}
-
-/* .container {
-  max-width: 100rem;
-  margin: auto;
-} */
-
-/*Header stuff*/
-.navbar {
-  width:100%;
-}
-
-.navbar ul {
-  width: 100%;
-  font-family: Poppins, sans-serif;
-  font-weight:bold;
-  font-size: 1.7rem;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-  text-align: center;
-}
-
-.navbar li a {
-  padding: 2.5rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.navbar img {
-  margin:1.5rem 0 1rem 1.6rem;
-  width: 4rem;
-}
-
-.navbar li a:hover {
-  color: #E06D69;
-}
-
-.navlink {
-  margin: 0rem 0rem;
-  padding: 5rem;
-}
-
-/*MENU*/
-.navbar .navLinks {
-    color: #1c1c1c;
-    background-color: #FCF4EF;
-    display: block;
-    max-height: 0rem;
-    transition: .3s ease-in-out;
-    text-align: right;
-    z-index: 1;
-}
-
-/*MENU ICON*/
-
-.menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 3.5rem 2rem 2rem 2rem;
-  user-select: none;
-}
-
-.navbar .menu-icon .navicon {
-  background: #1c1c1c;
-  display: flex;
-  height: 0.4rem;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 2rem;
-}
-
-.navbar .menu-icon .navicon:before,
-.navbar .menu-icon .navicon:after {
-  background: #1c1c1c;
-  content: '';
-  display: flex;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.navbar .menu-icon .navicon:before {
-  top: 7px;
-}
-
-.navbar .menu-icon .navicon:after {
-  top: -7px;
-}
-
-/* menu btn */
-
-.navbar .menu-btn {
- display: none;
-}
-
-.navbar .menu-btn:checked ~ .navLinks {
- max-height: 100vh;
-
-}
-
-.navbar .menu-btn:checked ~ .menu-icon .navicon {
- background: transparent;
-}
-/* icon animation */
-.navbar .menu-btn:checked ~ .menu-icon .navicon:before {
- transform: rotate(-45deg);
-}
-
-.navbar .menu-btn:checked ~ .menu-icon .navicon:after {
- transform: rotate(45deg);
-}
-
-.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
- top: 0;
-}
-
-/*hero stuff*/
-.hero {
-  padding: 10rem 1.6rem;
-  max-width:100%;
-}
-
-.hero h5{
-  width: 85%;
-  padding-top: 4rem;
-}
-
-/* ------Case study section!------- */
-
-main {
   margin: 0 auto;
+  max-width:100rem;
 }
 
-.projects {
-  width:100%;
+.container-grid {
+  display:grid;
+  grid-template-rows: auto 2fr auto auto auto;
 }
-
-.project-grid {
-  display: grid;
-  grid-template-columns: 6fr;
-  grid-template-areas:
-  "project-pic"
-  "project-info";
-}
-
-.project-pic {
-  width: 37.5rem;
-  max-width: 60rem;
-}
-
-.project-info {
-  padding: 1rem 1.6rem 2rem 1.6rem;
-}
-
-.stash .project-grid {
-  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.stash .project-pic {
-  object-fit: cover;
-  padding: 2rem 1.6rem;
-}
-
-.nintendo {
-  background: linear-gradient(180deg, #FA9A1F 80%, rgba(250, 228, 31, 0) 120%);
-}
-
-.nintendo .project-pic {
-  height: 37.5rem;
-  position: relative;
-  object-fit: cover;
-  object-position: -24rem;
-}
-
-.blocjams {
-  background: linear-gradient(180deg, #D6423E 22.72%, #612854 110.86%);
-}
-
-.blocjams .project-pic {
-  /* object-fit: cover; */
-  object-fit:contain;
-  padding: 2rem 1.6rem;
-  height: 37.5rem;
-  object-position: 0 8rem;;
-
-}
-
-.CaseButton {
-  cursor:pointer;
-  display: flex;
-  flex-wrap:wrap;
-  min-width:20rem;
-  height:auto;
-  background-color: #E06D69;
-  border-style: none;
-  color: #fbfbfb;
-  filter: drop-shadow(0 0.25rem .25rem rgba(0,0,0,0.25));
-  margin: 3rem 5rem 5rem 0;
-  padding: .75rem 2rem;
-  text-decoration: none;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  text-align: center;
-  justify-content: space-around;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  -webkit-appearance: none;
-}
-
 
 /* <!--Typgraphy--> */
 
@@ -309,6 +90,257 @@ p {
 
 strong{
   font-weight:bold;
+}
+
+/*Header stuff*/
+.navbar {
+  width:100%;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+  /* display:flex; */
+}
+
+.navbar ul {
+  display:block;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  font-weight:bold;
+  font-size: 1.7rem;
+  position: relative;
+  margin: 4rem 3rem 0 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+
+.navbar li a {
+  margin:0 1rem;
+  padding:1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav .logo-box {
+  align-items: center;
+  margin:1rem 1rem 0 0;
+  display:flex;
+  float:left;
+}
+
+nav a {
+  cursor:pointer;
+}
+
+.logo-box img {
+  display:block;
+}
+
+.navbar li a:hover {
+  color: #E06D69;
+}
+
+.navlink {
+  margin: 6rem 0rem;
+  padding: 0rem 0;
+}
+
+
+/*MENU*/
+.navbar .navLinks {
+    color: #1c1c1c;
+    background-color: #FCF4EF;
+    display: block;
+    max-height: 0rem;
+    transition: .3s ease-in-out;
+    text-align: right;
+    /* z-index: 0; */
+}
+
+/*MENU ICON*/
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 3rem 5% 2rem 2rem;
+  user-select:none;
+  /* margin: -6rem auto; */
+}
+
+.navbar .menu-icon .navicon {
+  background: #1c1c1c;
+  display: flex;
+  height: 0.4rem;
+  position: relative;
+  transition: background-color .2s ease-out;
+  width: 2rem;
+}
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+  background: #1c1c1c;
+  content: '';
+  display: flex;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navbar .menu-icon .navicon:before {
+  top: 7px;
+}
+
+.navbar .menu-icon .navicon:after {
+  top: -7px;
+}
+
+/* menu btn */
+
+.navbar .menu-btn {
+ display: none;
+}
+
+.navbar .menu-btn:checked ~ .navLinks {
+ max-height: 100vh;
+
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon {
+ background: transparent;
+}
+/* icon animation */
+.navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+ transform: rotate(-45deg);
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+ transform: rotate(45deg);
+}
+
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+ top: 0;
+}
+
+/*hero stuff*/
+.hero {
+  padding: 10rem 5%;
+  max-width:100%;
+}
+
+.location {
+  display:flex;
+}
+
+.hero .location h5 {
+  padding: 2rem 0 2rem 1rem;
+  vertical-align:middle;
+  font-weight: 400;
+  font-size:1.2rem;
+  color:#1c1c1c;
+}
+
+.hero h5{
+  width: 85%;
+  padding-top: 4rem;
+}
+
+/* ------Case study section!------- */
+
+main {
+  margin: 0 auto;
+}
+
+#projects {
+  width: 100%;
+}
+
+.project-outer-grid {
+  display: grid;
+  grid-template-rows:auto auto auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "project-pic"
+  "project-info";
+}
+
+.project-pic {
+  grid-area: project-pic;
+  /* max-height:30rem; */
+}
+
+.project-pic img {
+  width:100%;
+  margin:0 auto;
+  padding:3rem;
+}
+
+.project-info {
+  padding: 1rem 5%;
+  grid-area: project-info;
+}
+
+.stash {
+  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
+}
+
+
+.stash .project-pic {
+    margin:0rem auto;
+}
+
+.nintendo {
+  background: linear-gradient(180deg, #FA9A1F 80%, rgba(250, 228, 31, 0) 120%);
+}
+
+.nintendo .project-pic {
+  object-fit: cover;
+
+}
+
+.nintendo .project-pic img{
+  padding:0;
+  position: relative;
+  min-height: 30rem;
+
+}
+
+.blocjams {
+  background: linear-gradient(180deg, #D6423E 22.72%, #612854 110.86%);
+}
+
+.blocjams .project-pic {
+  margin:0rem auto;
+}
+
+.CaseButton {
+  cursor:pointer;
+  display: flex;
+  flex-wrap:wrap;
+  min-width:20rem;
+  height:auto;
+  background-color: #E06D69;
+  border-style: none;
+  color: #fbfbfb;
+  filter: drop-shadow(0 0.25rem .25rem rgba(0,0,0,0.25));
+  margin: 3rem 5rem 5rem 0;
+  padding: .75rem 2rem;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  justify-content: space-around;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  -webkit-appearance: none;
 }
 
 /* <!--QUOTE--> */
@@ -373,15 +405,131 @@ footer {
   text-align: center;
 }
 
+/*<--------Media Querries----->*/
+
+@media screen and (min-width:376px) and (max-width:767px) {
+
+      /* .hero h5 {
+        width: 70%;
+      } */
+
+      .project-pic img{
+        padding:0rem 0rem;
+        max-width:50rem;
+      }
+}
+
 
 @media screen and (min-width:768px) {
-  .main {
-    width: 70rem;
-  }
+      /* .main {
+        width: 70rem;
+      } */
+
+      .menu-icon {
+        display: none;
+      }
+
+
+      .logo-box img {
+        width:5rem;
+
+      }
+      nav .logo-box {
+        margin: 0rem 0rem;
+      }
+
+      .navbar {
+        height:10rem;
+        display:grid;
+        grid-template-columns: 1fr auto auto;
+        grid-template-areas:
+        "logo . navitems";
+        max-width:130rem;
+        margin:0 auto;
+      }
+
+      .navlink {
+        margin: 0 0;
+      }
+
+      .navbar ul {
+        background-color:  #FCF4EF;
+        overflow:visible;
+      }
+
+      .navbar li {
+        text-align: right;
+        display: inline-block;
+        padding:0 1rem 0 .5rem;
+      }
+
+      .hero {
+        padding:16rem 0;
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr 6fr 4fr 1fr;
+        grid-template-areas:
+        ".      hey-there      .    .     "
+        ".      ima           .     .     "
+        ".      loc           .    .     ";
+      }
+
+      .hero h1 {
+        grid-area: hey-there;
+      }
+
+      #projects {
+        grid-auto-rows:
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-areas:
+        ". project-info project-pic .";
+      }
+
+      /* .stash {
+        max-height: 35rem;
+      } */
+
+
+      .project-info {
+        align-self: center;
+        padding: 4rem 0;
+      }
+
+      .project-pic {
+        max-width:40rem;
+        max-height:35rem;
+      }
+
+      .CaseButton {
+        margin: 3rem 0 3rem 0;
+      }
+
+      .hero h5 {
+        width:100%;
+        padding-top: 4rem;
+        grid-area: ima;
+      }
+
+      .location {
+        grid-area:loc;
+      }
+
 }
 
 @media screen and (min-width:1000px) {
-  .main {
-    width: 90rem;
-  }
+      .main {
+        width: 90rem;
+      }
+      .project-pic {
+        max-width: 60rem;
+      }
+
+      .hero h5 {
+        /* width: 60%; */
+        padding-top: 4rem;
+      }
 }

@@ -1,0 +1,446 @@
+/* <!--Basic Styles--> */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size:10px;
+}
+
+body {
+  background-color: #FCF4EF;
+  font-family: 'PT Serif', serif;
+  color:#1c1c1c;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+a {
+  all: unset;
+}
+
+.full-container {
+  width:100%;
+  margin: 0 auto;
+  max-width:100rem;
+}
+
+.container-grid {
+  display:grid;
+  grid-template-rows: auto 2fr auto auto auto;
+}
+
+/* <!--Typgraphy--> */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #E06D69;
+  font-family: Poppins, sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 4.15rem;
+  font-weight:600;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+h3 {
+  font-size: 3.3rem;
+  line-height: 37px;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  font-weight:350;
+}
+
+h4 {
+  font-size: 2.65rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 2.125rem;
+  line-height: normal;
+}
+
+h6 {
+  font-size: 1.7rem;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+
+p {
+  font-family: 'PT Serif', serif;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+strong{
+  font-weight:bold;
+}
+
+/*Header stuff*/
+.navbar {
+  width:100%;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+  /* display:flex; */
+}
+
+.navbar ul {
+  display:block;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  font-weight:bold;
+  font-size: 1.7rem;
+  position: relative;
+  margin: 4rem 3rem 0 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+
+.navbar li a {
+  margin:0 1rem;
+  padding:1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav .logo-box {
+  align-items: center;
+  margin:1rem 1rem 0 0;
+  display:flex;
+  float:left;
+}
+
+nav a {
+  cursor:pointer;
+}
+
+.logo-box img {
+  display:block;
+}
+
+.navbar li a:hover {
+  color: #E06D69;
+}
+
+.navlink {
+  margin: 6rem 0rem;
+  padding: 0rem 0;
+}
+
+
+/*MENU*/
+.navbar .navLinks {
+    color: #1c1c1c;
+    background-color: #FCF4EF;
+    display: block;
+    max-height: 0rem;
+    transition: .3s ease-in-out;
+    text-align: right;
+    /* z-index: 0; */
+}
+
+/*MENU ICON*/
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 3rem 5% 2rem 2rem;
+  user-select:none;
+  /* margin: -6rem auto; */
+}
+
+.navbar .menu-icon .navicon {
+  background: #1c1c1c;
+  display: flex;
+  height: 0.4rem;
+  position: relative;
+  transition: background-color .2s ease-out;
+  width: 2rem;
+}
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+  background: #1c1c1c;
+  content: '';
+  display: flex;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navbar .menu-icon .navicon:before {
+  top: 7px;
+}
+
+.navbar .menu-icon .navicon:after {
+  top: -7px;
+}
+
+/* menu btn */
+
+.navbar .menu-btn {
+ display: none;
+}
+
+.navbar .menu-btn:checked ~ .navLinks {
+ max-height: 100vh;
+
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon {
+ background: transparent;
+}
+/* icon animation */
+.navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+ transform: rotate(-45deg);
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+ transform: rotate(45deg);
+}
+
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+ top: 0;
+}
+
+/*hero stuff*/
+.hero {
+  padding: 4rem 5%;
+  max-width:100%;
+}
+
+.hero img {
+  max-width: 40rem;
+}
+
+/*-----OTHER PROJECTS SECTION------*/
+.other-projects {
+  width:100%;
+}
+
+.nintendo h2, .blocjams h2 {
+}
+
+.nintendo {
+  background-image: url("../images/nintendo-mini-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200px;
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  z-index:1;
+  background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+  height:100%;
+}
+
+.nintendo-text {
+  margin: 0 1.6rem;
+  position: relative;
+  top: 10%;
+  left: 34%;
+  width:50%;
+  color: #fbfbfb;
+}
+.other-projects .CaseButton {
+  margin: 2rem 0 4rem;
+  position: relative;
+  right:0%;
+}
+
+.blocjams {
+  background-image: url("../images/blocjams-mini-banner.png");
+  background-color: #D6423E;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200px;
+  position: relative;
+  width:100%;
+}
+
+.blocjams-text {
+  margin: 0 1.6rem;
+  position: relative;
+  top: 30%;
+  left: 0%;
+  width:60%;
+  color: #fbfbfb;
+}
+
+
+/* <!--QUOTE--> */
+
+footer {
+  margin: 5rem 0 2rem;
+  width:100%;
+  padding: 0 1.6rem;
+}
+
+.quotebox {
+  display: flex;
+  flex-wrap:wrap;
+  background-color: #fbfbfb;
+  /* border-radius: 5px; */
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
+  width: 100%;
+  max-width: 60rem;
+  position: relative;
+}
+
+.quotebox h6 {
+  width:100%;
+}
+
+.boldh6 {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.wannatalk {
+  padding: 4rem 0;
+  width:100%;
+  max-width: 60rem;
+  margin:0 auto;
+
+}
+
+.socials {
+  display:flex;
+  font-size: 24px;
+  margin: 0 auto;
+  max-width:60rem;
+}
+
+.socials li {
+  padding: 0 0 2rem;
+  width:20%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials li a:hover {
+  color: #E06D69;
+  cursor:pointer;
+}
+
+.copyright {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/*<--------Media Querries----->*/
+
+@media screen and (min-width:376px) and (max-width:767px) {
+
+}
+
+
+@media screen and (min-width:768px) {
+
+      .menu-icon {
+        display: none;
+      }
+
+      .charts {
+        display: flex;
+        flex-wrap: wrap;
+
+      }
+
+      .logo-box img {
+        width:5rem;
+
+      }
+      nav .logo-box {
+        margin: 0rem 0rem;
+      }
+
+      .navbar {
+        height:10rem;
+        display:grid;
+        grid-template-columns: auto 3fr auto;
+        grid-template-areas:
+        "logo . navitems";
+        max-width:130rem;
+        margin:0 auto;
+      }
+
+      .navlink {
+        margin: 0 0;
+      }
+
+      .navbar ul {
+        background-color:  #FCF4EF;
+        overflow:visible;
+      }
+
+      .navbar li {
+        text-align: right;
+        display: inline-block;
+        padding:0 1rem 0 .5rem;
+      }
+
+      .nintendo-text {
+        padding:2rem 0rem;
+      }
+
+      .blocjams-text {
+        padding:2rem 0rem;
+        margin: 0 1.6rem;
+        position: relative;
+        top: 10%;
+        left: 34%;
+        width: 50%;
+      }
+
+      .CaseButton {
+        margin: 3rem 0 3rem 0;
+      }
+
+      .other-projects {
+        display:flex;
+      }
+
+
+
+}
+
+@media screen and (min-width:1000px) {
+      /* .main {
+        width: 90rem;
+      } */
+
+      .hero img {
+        max-width:80rem;
+        display:flex;
+      }
+
+}

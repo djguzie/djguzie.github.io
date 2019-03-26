@@ -6,87 +6,101 @@
     <title>Portfolio | Jonathan Guzman</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif100,200,300,400,500,600,700,800,900|Poppins200,300,400,500,600,700,800,900" rel="stylesheet">
   </head>
   <body>
-    <div class="full-container">
+        <!--full-page container-->
+    <div class="container-grid">
         <!--Top Navigation-->
-        <div class="welcome-wrapper">
-          <nav class="navbar">
-            <a href="index.html"><img class="logo" src="images/jguzmanlogo.svg" alt="JG"></a>
-            <input class="menu-btn" type="checkbox" id="menu-btn">
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="navLinks">
-                <li class="navlink"><a href="about.html">ABOUT</a></li>
-                <li class="navlink"><a href="#projects">PROJECTS</a></li>
-                <li class="navlink"><a href="mailto:jon.guzman@gmail.com">CONTACT</a></li>
-            </ul>
-          </nav>
-          <!--Hero Section-->
-          <section class="hero">
-            <h1>Hey there,<br> I'm Jonathan</h1>
-            <h5>a UX designer living in the SF Bay Area that's one part DJ, one part teacher and all about creating great experiences.</h5>
-          </section>
+      <nav class="navbar">
+        <div class="logo-box">
+          <a href="index.html"><img src="images/jguzmanlogo.svg" alt="JG"></a>
         </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="navLinks">
+              <li class="navlink"><a href="#projects">PROJECTS</a></li>
+              <li class="navlink"><a href="about.html">ABOUT</a></li>
+              <li class="navlink"><a href="https://drive.google.com/drive/folders/1bkBPrHbur2LVaDZZGyJWajCbKuKcUA94?usp=sharing" target="_blank">RESUME</a></li>
+              <li class="navlink"><a href="mailto:jon.guzman@gmail.com">CONTACT</a></li>
+        </ul>
+      </nav>
+          <!--Hero Section-->
+      <section class="hero">
+          <h1>Hey there,<br> I'm Jonathan</h1>
+          <h5>I'm a UX Designer crafting products that are approachable, accessible and awesome.</h5>
+          <div class="location">
+            <i class="fas fa-map-marker-alt" style ="align-self:center;color:#1c1c1c;"></i>
+            <h5> SF/Bay Area, CA</h5>
+          </div>
+      </section>
       <!--Projects Section-->
       <main>
         <section id="projects">
+          <div class="project-outer-grid">
             <div class="stash">
               <div class="project-grid">
-                <a href="stash.html"><img class="project-pic" src="images/stash-iso-macbook-mockup.png" alt="Stash"></a>
+                <div class="project-pic">
+                  <a href="stash.html"><img class="project-pic" src="images/stash-iso-macbook-mockup.png" alt="Stash"></a>
+                </div>
                 <div class="project-info">
-                  <h2>Stash</h2>
-                  <h3>Cloud storage is boring. <br>Stash makes it fun.</h3>
-                  <a href="stash.html"><input class="CaseButton" type="button" value="View case study"></a>
+                    <h2>Stash</h2>
+                    <h3>Cloud storage is boring. <br>Stash makes it fun.</h3>
+                    <a href="stash.html"><input class="CaseButton" type="button" value="View case study"></a>
                 </div>
               </div>
             </div>
-            <!-- <div class="nintendo">
-              <div class="project-grid">
-                <a href="nintendo.html"><img class="project-pic" src="images/nintendo-switch-eshop.jpg" alt="Nintendo"></a>
-                <div class="project-info">
-                  <h2>Nintendo E-Shop</h2>
-                  <h3>A redesign of the Nintendo Switch digital storefront</h3>
-                  <a href="nintendo.html"><input class="CaseButton" type="button" value="VIEW CASE STUDY"></a>
+              <!-- <div class="nintendo">
+                <div class="project-grid">
+                  <div class="project-pic">
+                    <a href="nintendo.html"><img class="project-pic" src="images/nintendo-switch-eshop.jpg" alt="Nintendo"></a>
+                    <div class="project-info">
+                      <h2>Nintendo E-Shop</h2>
+                      <h3>A redesign of the Nintendo Switch digital storefront</h3>
+                      <a href="nintendo.html"><input class="CaseButton" type="button" value="VIEW CASE STUDY"></a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="blocjams">
+                <div class="project-grid">
+                  <div class="project-pic">
+                    <a href="blocjams.html"><img class="project-pic" src="images/blocjams-iso-phone-mockup.png" alt="Bloc Jams"></a>
+                  </div>
+                  <div class="project-info">
+                    <h2>Bloc Jams</h2>
+                    <h3>A responsive web media player built with jQuery</h3>
+                    <a href="blocjams.html"><input class="CaseButton" type="button" value="LEARN MORE"></a>
+                  </div>
                 </div>
               </div>
-            </div> -->
-            <div class="blocjams">
-              <div class="project-grid">
-                <a href="blocjams.html"><img class="project-pic" src="images/blocjams-iso-phone-mockup.png" alt="Bloc Jams"></a>
-                <div class="project-info">
-                  <h2>Bloc Jams</h2>
-                  <h3>A responsive web media player built with jQuery</h3>
-                  <a href="blocjams.html"><input class="CaseButton" type="button" value="LEARN MORE"></a>
-                </section>
+            </div>
+          </section>
+        </main>
+        <!--Footer... duh-->
+        <footer>
+            <div class="quotebox">
+              <div class="quote">
+                <h6>"You could have been anywhere in the world, but you're here with me. I appreciate that."</h6>
               </div>
+              <h6 class="boldh6"><strong>Jay-Z</strong></h6>
             </div>
-          </div>
-      </main>
-      <!--Footer... duh-->
-      <footer>
-          <div class="quotebox">
-            <div class="quote">
-              <h6>"You could have been anywhere in the world, but you're here with me. I appreciate that."</h6>
+            <div class="wannatalk">
+              <h5> Wanna talk UX? Question about a project? Favorite rap lyric
+              you wanna share? Great! Find me at my favorite web hangouts
+              below and let's connect.</h5>
             </div>
-            <h6 class="boldh6"><strong>Jay-Z</strong></h6>
-          </div>
-          <div class="wannatalk">
-            <h5> Wanna talk UX? Question about a project? Favorite rap lyric
-            you wanna share? Great! Find me at my favorite web hangouts
-            below and let's connect.</h5>
-          </div>
-          <ul class="socials">
-              <li><a href="mailto:jon.guzman@gmail.com"><i class="fas fa-envelope"></i></a></li>
-              <li><a href="https://linkedin.com/in/jguzmandesign" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="https://www.github.com/djguzie" target="_blank"><i class="fab fa-github-alt"></i></a></li>
-              <li><a href="https://twitter.com/jguzmandesign" target="_blank"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://medium.com/@jguzmandesign" target="_blank"><i class="fab fa-medium-m"></i></a></li>
-          </ul>
-          <p class="copyright">© 2019 Jonathan Guzman  |  designed and developed by Jonathan Guzman</p>
-      </footer>
-    </div>
+            <ul class="socials">
+                <li><a href="mailto:jon.guzman@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://linkedin.com/in/jguzmandesign" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.github.com/djguzie" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+                <li><a href="https://twitter.com/jguzmandesign" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://medium.com/@jguzmandesign" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+            </ul>
+            <p class="copyright">© 2019 Jonathan Guzman  |  designed and developed by Jonathan Guzman</p>
+        </footer>
+      </div>
     <!--scripts to set the party off!-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>

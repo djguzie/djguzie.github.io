@@ -17,33 +17,98 @@ body {
 
 a {
   all: unset;
-  cursor: pointer;
 }
 
-.welcome-wrapper {
+/* .full-container {
   width:100%;
-  max-width: 120rem;
-  margin: auto;
+  margin: 0 auto;
+  max-width:100rem;
+} */
+
+.container-grid {
+  /* display: grid;
+  grid-template-rows: auto 2fr auto auto auto; */
+
 }
 
-.full-container {
-  width:100%;
-  margin: auto;
+/* <!--Typgraphy--> */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #E06D69;
+  font-family: Poppins, sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 4.15rem;
+  font-weight:600;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+h3 {
+  font-size: 3.3rem;
+  line-height: 37px;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  font-weight:350;
+}
+
+h4 {
+  font-size: 2.65rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 2.125rem;
+  line-height: normal;
+}
+
+h6 {
+  font-size: 1.7rem;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+
+p {
+  font-family: 'PT Serif', serif;
+  font-size: 1.8rem;
+  line-height: 1.25rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+strong{
+  font-weight:bold;
 }
 
 /*Header stuff*/
 .navbar {
   width:100%;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+  /* display:flex; */
 }
 
 .navbar ul {
+  display:block;
   width: 100%;
   font-family: Poppins, sans-serif;
   font-weight:bold;
   font-size: 1.7rem;
   position: relative;
-  margin: 0;
-  padding: 0;
+  margin: 4rem 3rem 0 0;
   list-style: none;
   overflow: hidden;
   background-color: #fff;
@@ -51,24 +116,36 @@ a {
 }
 
 .navbar li a {
-  padding: 2.5rem;
+  margin:0 1rem;
+  padding:1rem;
   text-decoration: none;
   cursor: pointer;
 }
 
-.navbar img {
-  margin:1.5rem 0 1rem 1.6rem;
-  width: 4rem;
+nav .logo-box {
+  align-items: center;
+  margin:1rem 1rem 0 0;
+  display:flex;
+  float:left;
 }
 
-.navbar li a:hover, .navbar .menu-btn:hover {
+nav a {
+  cursor:pointer;
+}
+
+.logo-box img {
+  display:block;
+}
+
+.navbar li a:hover {
   color: #E06D69;
 }
 
 .navlink {
-  margin: 0rem 0rem;
-  padding: 5rem;
+  margin: 6rem 0rem;
+  padding: 0rem 0;
 }
+
 
 /*MENU*/
 .navbar .navLinks {
@@ -78,7 +155,7 @@ a {
     max-height: 0rem;
     transition: .3s ease-in-out;
     text-align: right;
-    z-index: 9;
+    /* z-index: 0; */
 }
 
 /*MENU ICON*/
@@ -87,8 +164,9 @@ a {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 3.5rem 2rem 2rem 2rem;
-  user-select: none;
+  padding: 3rem 5% 2rem 2rem;
+  user-select:none;
+  /* margin: -6rem auto; */
 }
 
 .navbar .menu-icon .navicon {
@@ -96,7 +174,7 @@ a {
   display: flex;
   height: 0.4rem;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background-color .2s ease-out;
   width: 2rem;
 }
 
@@ -147,27 +225,40 @@ a {
  top: 0;
 }
 
-/* <!--HERO--> */
-.hero {
-  padding: 8rem 0;
 
+/* <!--HERO--> */
+ .hero {
+  padding: 8rem 0;
+  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
+}
+
+.hero img {
+  padding:2rem;
+  margin: 0 auto;
+}
+
+.hero h1, .hero h5 {
+  color:#fbfbfb;
 }
 
 .hero .CaseButton {
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
 /*----CASE STUDY TIME-----*/
 
-.summary, .problem, .solution, .process, .conclusion {
+.summary, .problem, .solution, .process {
   padding:8rem 0;
   width:100%;
+  max-width:60rem;
+  margin:0 auto;
 }
 
 section img {
   width:100%;
   margin: 0 auto;
   object-fit: cover;
+  align-self: start;
 }
 
 .button {
@@ -198,18 +289,25 @@ section img {
 }
 
 .image_stash {
-  background: linear-gradient(180deg, #D6423E 22.72%, #612854 110.86%);
+  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
+  width:100%;
+  margin:0 auto;
+  display: flex;
+}
+
+.image_stash img {
+  max-width:60rem;
+  margin:0 auto;
 }
 
 .charts {
   background-color: #fbfbfb;
   filter: drop-shadow(0 .5rem .25rem rgba(0,0,0,0.25));
   padding: 2rem 1.6rem;
-  display: flex;
-  flex-wrap: wrap;
-  width:90%;
+  display: grid;
+  grid-template-columns: 6fr;
   position: relative;
-  margin: auto;
+  margin: 0 1.6rem;
 }
 
 .charts h6 {
@@ -384,6 +482,11 @@ p.smalldetails {
   margin: 0 auto;
 }
 
+.labels {
+  width:50%;
+  text-align: center;
+}
+
 .hifi-comparison {
   margin-top:8rem;
 }
@@ -410,9 +513,16 @@ p.smalldetails {
 }
 
 .conclusion {
+  padding: 8rem 0;
   background-color: #1c1c1c;
   color:#fbfbfb;
   position: relative;
+  width:100%
+}
+
+.conclusion p {
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 /* .conclusion a {
@@ -510,13 +620,18 @@ strong{
 
 .nintendo {
   background-image: url("../images/nintendo-mini-banner.png");
-  background-color: #FA9A1F;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height:200px;
   position: relative;
   width: 100%;
+}
+
+.overlay {
+  z-index:1;
+  background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+  height:100%;
 }
 
 .nintendo-text {
@@ -553,7 +668,7 @@ strong{
   color: #fbfbfb;
 }
 
-/* <!--FOOTER--> */
+/* <!--QUOTE--> */
 
 footer {
   margin: 5rem 0 2rem;
@@ -565,6 +680,7 @@ footer {
   display: flex;
   flex-wrap:wrap;
   background-color: #fbfbfb;
+  /* border-radius: 5px; */
   margin: 0 auto;
   padding: 2rem 2rem;
   filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
@@ -575,7 +691,7 @@ footer {
 
 .quotebox h6 {
   width:100%;
-  font-weight: 400;
+  font-weight:normal;
 }
 
 .boldh6 {
@@ -591,8 +707,7 @@ footer {
 }
 
 .wannatalk h5 {
-  padding:0;
-  text-align: left;
+  text-align:inherit;
 }
 
 .socials {
@@ -617,14 +732,95 @@ footer {
 .copyright {
   font-size: 1rem;
   text-align: center;
-  line-height: 1.25rem;
-  margin: 1rem 1rem 1rem 0;
-  padding: 0;
+  padding:0;
 }
 
 
-@@media only screen and (min-width: 768px){
-  .charts {
-    width: 50%;
-  }
+/*<--------Media Querries----->*/
+
+@media screen and (min-width:376px) and (max-width:767px) {
+
+}
+
+
+@media screen and (min-width:768px) {
+
+      .menu-icon {
+        display: none;
+      }
+
+      .charts {
+        display: flex;
+        flex-wrap: wrap;
+
+      }
+
+      .logo-box img {
+        width:5rem;
+
+      }
+      nav .logo-box {
+        margin: 0rem 0rem;
+      }
+
+      .navbar {
+        height:10rem;
+        display:grid;
+        grid-template-columns: auto 3fr auto;
+        grid-template-areas:
+        "logo . navitems";
+        max-width:130rem;
+        margin:0 auto;
+      }
+
+      .navlink {
+        margin: 0 0;
+      }
+
+      .navbar ul {
+        background-color:  #FCF4EF;
+        overflow:visible;
+      }
+
+      .navbar li {
+        text-align: right;
+        display: inline-block;
+        padding:0 1rem 0 .5rem;
+      }
+
+      .nintendo-text {
+        padding:2rem 0rem;
+      }
+
+      .blocjams-text {
+        padding:2rem 0rem;
+        margin: 0 1.6rem;
+        position: relative;
+        top: 10%;
+        left: 34%;
+        width: 50%;
+      }
+
+      .CaseButton {
+        margin: 3rem 0 3rem 0;
+      }
+
+      .other-projects {
+        display:flex;
+      }
+
+
+
+}
+
+@media screen and (min-width:1000px) {
+      /* .main {
+        width: 90rem;
+      } */
+
+      .hero img {
+        max-width:80rem;
+        display:flex;
+      }
+
 }
