@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #FCF4EF;
+  background-color: #Fbfbfb;
   font-family: 'PT Serif', serif;
   color:#1c1c1c;
   font-size: 1.7rem;
@@ -41,21 +41,21 @@ h1 {
   font-family: Poppins, sans-serif;
   font-size: 5rem;
   font-weight: bold;
-  line-height: 56px;
+  line-height: 5.6rem;
   letter-spacing: -0.02em;
 }
 
 h2 {
   font-size: 4.15rem;
   font-weight:600;
-  line-height: 42px;
+  line-height: 4.2rem;
   letter-spacing: -0.02em;
   color: #fbfbfb;
 }
 
 h3 {
   font-size: 3.3rem;
-  line-height: 37px;
+  line-height: 3.7rem;
   letter-spacing: -0.02em;
   color: #fbfbfb;
   font-weight:350;
@@ -123,7 +123,7 @@ strong{
 
 nav .logo-box {
   align-items: center;
-  margin:1rem 1rem 0 0;
+  margin: 1rem 0rem;
   display:flex;
   float:left;
 }
@@ -149,7 +149,7 @@ nav a {
 /*MENU*/
 .navbar .navLinks {
     color: #1c1c1c;
-    background-color: #FCF4EF;
+    background-color: #Fbfbfb;
     display: block;
     max-height: 0rem;
     transition: .3s ease-in-out;
@@ -163,7 +163,7 @@ nav a {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 3rem 5% 2rem 2rem;
+  padding: 3rem 2% 2rem 0rem;
   user-select:none;
   /* margin: -6rem auto; */
 }
@@ -189,11 +189,11 @@ nav a {
 }
 
 .navbar .menu-icon .navicon:before {
-  top: 7px;
+  top: .7rem;
 }
 
 .navbar .menu-icon .navicon:after {
-  top: -7px;
+  top: -.7rem;
 }
 
 /* menu btn */
@@ -230,6 +230,10 @@ nav a {
   max-width:100%;
 }
 
+.hero span {
+  font-weight: 400;
+}
+
 .location {
   display:flex;
 }
@@ -244,7 +248,9 @@ nav a {
 
 .hero h5{
   width: 85%;
-  padding-top: 4rem;
+  padding-top: 2rem;
+  /* font-weight: 400; */
+
 }
 
 /* ------Case study section!------- */
@@ -268,11 +274,12 @@ main {
   grid-template-areas:
   "project-pic"
   "project-info";
+
 }
 
 .project-pic {
   grid-area: project-pic;
-  /* max-height:30rem; */
+  max-height: 35rem;
 }
 
 .project-pic img {
@@ -335,50 +342,88 @@ main {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.7rem;
   text-align: center;
   justify-content: space-around;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   -webkit-appearance: none;
+  transition: .3s all;
+}
+
+.CaseButton:hover, .CaseButton:focus, .CaseButton:active {
+  transform: scale(1.05);
+  /* background-color:  */
 }
 
 /* <!--QUOTE--> */
 
+
 footer {
-  margin: 5rem 0 2rem;
-  width:100%;
-  padding: 0 1.6rem;
+    width:100%;
+    padding: 4rem 1.6rem 2rem;
+    background-color: #fcf4ef;
 }
 
-.quotebox {
-  display: flex;
-  flex-wrap:wrap;
-  background-color: #fbfbfb;
-  /* border-radius: 5px; */
-  margin: 0 auto;
-  padding: 2rem 2rem;
-  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
-  width: 100%;
-  max-width: 60rem;
+blockquote{
+  font-size: 1.7rem;
+  font-family: Poppins, sans-serif;
+  width:100%;
+  margin:0 auto;
+  font-style:italic;
+  color: #1c1c1c;
+  padding:3rem 3rem 3rem 6rem;
+  border-left:.8rem solid #D6423E;
+  line-height:1.6;
   position: relative;
+  background:#FBFBFB;
+  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
+  max-width:60rem;
 }
 
-.quotebox h6 {
-  width:100%;
+blockquote::before{
+  font-family:Arial, sans-serif;
+  content: "“";
+  color:#D6423E;
+  font-size:8rem;
+  position: absolute;
+  left: 2rem;
+  top:-1rem;
 }
 
-.boldh6 {
-  text-align: right;
-  padding-right: 1rem;
+blockquote::after{
+  font-family:Arial, sans-serif;
+  content: "”";
+  color:#D6423E;
+  font-size:8rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  padding:0 1rem;
+}
+
+blockquote span{
+  display:block;
+  color:#1c1c1c;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
 }
 
 .wannatalk {
-  padding: 4rem 0;
+  padding: 12rem 0 2rem;
   width:100%;
   max-width: 60rem;
   margin:0 auto;
+}
 
+.wannatalk h5 {
+  text-align:inherit;
+  font-weight:300;
+}
+
+.wanna-text {
+  font-weight:500;
 }
 
 .socials {
@@ -403,7 +448,32 @@ footer {
 .copyright {
   font-size: 1rem;
   text-align: center;
+  padding:0;
 }
+
+
+/* .quotebox {
+  display: flex;
+  flex-wrap:wrap;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
+  width: 100%;
+  max-width: 60rem;
+  position: relative;
+}
+
+.quotebox h6 {
+  width:100%;
+}
+
+.boldh6 {
+  text-align: right;
+  padding-right: 1rem;
+} */
+
 
 /*<--------Media Querries----->*/
 
@@ -414,16 +484,18 @@ footer {
       } */
 
       .project-pic img{
-        padding:0rem 0rem;
+        padding:2rem 4rem;
         max-width:50rem;
       }
 }
 
 
 @media screen and (min-width:768px) {
-      /* .main {
-        width: 70rem;
-      } */
+
+      h1 {
+        font-size:5.8rem;
+        line-height: 1.1;
+      }
 
       .menu-icon {
         display: none;
@@ -435,21 +507,24 @@ footer {
 
       }
       nav .logo-box {
-        margin: 0rem 0rem;
+        grid-area:logo;
       }
 
       .navbar {
         height:10rem;
-        display:grid;
-        grid-template-columns: 1fr auto auto;
-        grid-template-areas:
-        "logo . navitems";
-        max-width:130rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 9fr 1fr;
+        grid-template-areas: ". logo navitems .";
         margin:0 auto;
+        padding:0;
       }
 
       .navlink {
         margin: 0 0;
+      }
+
+     .navLinks {
+        grid-area: navitems;
       }
 
       .navbar ul {
@@ -460,11 +535,11 @@ footer {
       .navbar li {
         text-align: right;
         display: inline-block;
-        padding:0 1rem 0 .5rem;
+        padding:0 0 0 1rem;
       }
 
       .hero {
-        padding:16rem 0;
+        padding:12rem 0;
         display: grid;
         grid-auto-rows: auto;
         grid-template-columns: 1fr 6fr 4fr 1fr;
@@ -478,6 +553,15 @@ footer {
         grid-area: hey-there;
       }
 
+      .hero h5 {
+        width:100%;
+        grid-area: ima;
+      }
+
+      .location {
+        grid-area:loc;
+      }
+
       #projects {
         grid-auto-rows:
       }
@@ -487,6 +571,7 @@ footer {
         grid-auto-rows: 1fr;
         grid-template-areas:
         ". project-info project-pic .";
+        max-height:35rem;
       }
 
       /* .stash {
@@ -502,34 +587,30 @@ footer {
       .project-pic {
         max-width:40rem;
         max-height:35rem;
+        align-self: center;
       }
 
       .CaseButton {
-        margin: 3rem 0 3rem 0;
-      }
-
-      .hero h5 {
-        width:100%;
-        padding-top: 4rem;
-        grid-area: ima;
-      }
-
-      .location {
-        grid-area:loc;
+        margin: 3rem 0 3rem;
       }
 
 }
 
 @media screen and (min-width:1000px) {
-      .main {
-        width: 90rem;
+      h1 {
+        font-size: 9rem;
+        line-height: 1;
+      }
+
+      .hero {
+        padding:16rem 0;
       }
       .project-pic {
         max-width: 60rem;
       }
 
-      .hero h5 {
-        /* width: 60%; */
-        padding-top: 4rem;
-      }
+      /* .hero h5 {
+        width: 60%;
+        padding-top: 2rem;
+      } */
 }

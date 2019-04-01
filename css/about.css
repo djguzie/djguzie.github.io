@@ -26,8 +26,8 @@ a {
 }
 
 .container-grid {
-  display:grid;
-  grid-template-rows: auto 2fr auto auto auto;
+  /* display:grid;
+  grid-template-rows: auto 2fr auto auto auto; */
 }
 
 /* <!--Typgraphy--> */
@@ -71,6 +71,7 @@ h4 {
 h5 {
   font-size: 2.125rem;
   line-height: normal;
+
 }
 
 h6 {
@@ -84,8 +85,8 @@ h6 {
 p {
   font-family: 'PT Serif', serif;
   font-size: 1.8rem;
-  line-height: 3rem;
-  margin: 1rem 1rem 1rem 0;
+  line-height: 3.5rem;
+  padding:2rem;
 }
 
 strong{
@@ -137,6 +138,10 @@ nav a {
 }
 
 .navbar li a:hover {
+  color: #E06D69;
+}
+
+.current {
   color: #E06D69;
 }
 
@@ -227,16 +232,56 @@ nav a {
 /*hero stuff*/
 .hero {
   padding: 4rem 5%;
-  max-width:100%;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.about-me-pic {
 }
 
 .hero img {
-  max-width: 40rem;
+  width:100%;
+}
+
+.hero h1 {
+  padding:4rem 0 2rem;
+  text-align: center;
 }
 
 /*-----OTHER PROJECTS SECTION------*/
 .other-projects {
   width:100%;
+}
+
+
+.CaseButton {
+  border-style: none;
+  cursor:pointer;
+  display: flex;
+  min-width: 20rem;
+  flex-wrap:wrap;
+  background-color: #E06D69;
+  color: #fbfbfb;
+  height:auto;
+  margin: 4rem auto 8rem;
+  padding: .75rem 2rem;
+  text-decoration: none;
+  filter: drop-shadow(0 0.25rem .25rem rgba(0,0,0,0.25));
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  transition: .3s all;
+}
+
+.CaseButton:hover {
+  transform: scale(1.05);
+  /* background-color:  */
 }
 
 .nintendo h2, .blocjams h2 {
@@ -296,39 +341,69 @@ nav a {
 /* <!--QUOTE--> */
 
 footer {
-  margin: 5rem 0 2rem;
-  width:100%;
-  padding: 0 1.6rem;
+    width:100%;
+    padding: 4rem 1.6rem 2rem;
+    background-color: #fcf4ef;
 }
 
-.quotebox {
-  display: flex;
-  flex-wrap:wrap;
-  background-color: #fbfbfb;
-  /* border-radius: 5px; */
-  margin: 0 auto;
-  padding: 2rem 2rem;
-  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
-  width: 100%;
-  max-width: 60rem;
+blockquote{
+  font-size: 1.7rem;
+  font-family: Poppins, sans-serif;
+  width:100%;
+  margin:0 auto;
+  font-style:italic;
+  color: #1c1c1c;
+  padding:3rem 3rem 3rem 6rem;
+  border-left:.8rem solid #D6423E;
+  line-height:1.6;
   position: relative;
+  background:#FBFBFB;
+  filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
+  max-width:60rem;
 }
 
-.quotebox h6 {
-  width:100%;
+blockquote::before{
+  font-family:Arial, sans-serif;
+  content: "“";
+  color:#D6423E;
+  font-size:8rem;
+  position: absolute;
+  left: 2rem;
+  top:-1rem;
 }
 
-.boldh6 {
-  text-align: right;
-  padding-right: 1rem;
+blockquote::after{
+  font-family:Arial, sans-serif;
+  content: "”";
+  color:#D6423E;
+  font-size:8rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  padding:0 1rem;
+}
+
+blockquote span{
+  display:block;
+  color:#1c1c1c;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
 }
 
 .wannatalk {
-  padding: 4rem 0;
+  padding: 12rem 0 2rem;
   width:100%;
   max-width: 60rem;
   margin:0 auto;
+}
 
+.wannatalk h5 {
+  font-weight:300;
+}
+
+.wanna-text {
+  font-weight:500;
 }
 
 .socials {
@@ -353,7 +428,9 @@ footer {
 .copyright {
   font-size: 1rem;
   text-align: center;
+  padding:0;
 }
+
 
 
 /*<--------Media Querries----->*/
@@ -408,6 +485,26 @@ footer {
         padding:0 1rem 0 .5rem;
       }
 
+      .about-me-pic {
+        grid-area:"pic";
+      }
+
+      .words {
+        grid-area:words;
+      }
+
+      .hero {
+        display:grid;
+        grid-template-columns: auto 3fr auto auto;
+        grid-template-areas:
+        ". pic words .";
+        max-width:120rem;
+      }
+
+      .hero h1 {
+        padding:0 0 2rem;
+      }
+
       .nintendo-text {
         padding:2rem 0rem;
       }
@@ -441,6 +538,10 @@ footer {
       .hero img {
         max-width:80rem;
         display:flex;
+      }
+
+      .words {
+        max-width: 60rem;
       }
 
 }

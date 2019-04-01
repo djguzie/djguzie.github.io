@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif100,200,300,400,500,600,700,800,900|Poppins200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,500,600,700,800,900|Poppins:400,500,600,700,800,900" rel="stylesheet">
   </head>
   <body>
       <!--full-page container-->
@@ -21,7 +21,7 @@
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="navLinks">
                   <li class="navlink"><a href="#projects">PROJECTS</a></li>
-                  <li class="navlink"><a href="about.html">ABOUT</a></li>
+                  <li class="navlink"><a class="current" href="about.html">ABOUT</a></li>
                   <li class="navlink"><a href="https://drive.google.com/drive/folders/1bkBPrHbur2LVaDZZGyJWajCbKuKcUA94?usp=sharing" target="_blank">RESUME</a></li>
                   <li class="navlink"><a href="mailto:jon.guzman@gmail.com">CONTACT</a></li>
             </ul>
@@ -30,12 +30,14 @@
         <div class="about-me-pic">
           <img src="/images/aboutpic.png" alt="0">
         </div>
-        <h1>About</h1>
-            <p>Back when I was a 5th grade teacher, one of the lessons that I remember the most was teaching the 50 states and capitals. Memorization was not everyone’s forté, so I decided to break up the task into smaller chunks. With the students that that still had trouble, I broke up the learning goals even more. After a few weeks, I was able to get most of my class to pass the tests. This helped me learn that not every problem can be taken head on. Much like creating a multi-step user flow,  I  knew that breaking up a complex task into manageable chunks would be more fruitful than trying to memorize all 50 states at once.<br><br>
+        <div class="words">
+          <h1>About me</h1>
+          <p>Back when I was a 5th grade teacher, one of the lessons that I remember the most was teaching the 50 states and capitals. Memorization was not everyone’s forté, so I decided to break up the task into smaller chunks. With the students that that still had trouble, I broke up the learning goals even more. After a few weeks, I was able to get most of my class to pass the tests. This helped me learn that not every problem can be taken head on. Much like creating a multi-step user flow,  I  knew that breaking up a complex task into manageable chunks would be more fruitful than trying to memorize all 50 states at once.<br><br>
 
-            A few years later I had stepped away from classroom teaching, but still found myself refining lessons- this time at an Apple store. Having done my fair share of setups I noticed some people consistently got stuck at the same points in the setup process. A screen would teach them one way to interact with the device and then change this process on the next. Unable to change the software I helped people look for ways the software was showing them how to continue. Knowing now what I know about the UX process - user testing these few screens would have proven invaluable. This data would have allowed me to change my prototype to make sure different users could move on without any issues.<br><br>
+          A few years later I had stepped away from classroom teaching, but still found myself refining lessons- this time at an Apple store. Having done my fair share of setups I noticed some people consistently got stuck at the same points in the setup process. A screen would teach them one way to interact with the device and then change this process on the next. Unable to change the software I helped people look for ways the software was showing them how to continue. Knowing now what I know about the UX process - user testing these few screens would have proven invaluable. This data would have allowed me to change my prototype to make sure different users could move on without any issues.<br><br>
 
-            And while during the day I worked, at night I was a full-time DJ and music producer. After some time I began to DJ less and had less. At work, I didn’t express my creativity and that coupled with my schedule led to a drastic decline in my desire to make music. I knew I needed a creative outlet to help me stay balanced, so I looked at options that could afford me creativity but also a career. A friend I had mentioned that I look into UX and within a few clicks of a web search I knew that’s what I wanted to do. I had the perfect way to show my ingenuity and problem solving in one amazing career. I could take my vast experiences helping people achieve their goals and use design principles to translate that into digital products. I have been dedicated to becoming a UX Designer ever since and I look forward to creating products people love to use.<br><br>
+          And while during the day I worked, at night I was a full-time DJ and music producer. After some time I began to DJ less and had less. At work, I didn’t express my creativity and that coupled with my schedule led to a drastic decline in my desire to make music. I knew I needed a creative outlet to help me stay balanced, so I looked at options that could afford me creativity but also a career. A friend I had mentioned that I look into UX and within a few clicks of a web search I knew that’s what I wanted to do. I had the perfect way to show my ingenuity and problem solving in one amazing career. I could take my vast experiences helping people achieve their goals and use design principles to translate that into digital products. I have been dedicated to becoming a UX Designer ever since and I look forward to creating products people love to use.<br><br>
+        </div>
       </section>
       <section class="other-projects">
         <!--New projects will be put here-->
@@ -61,14 +63,11 @@
           </div>
       </section>
       <footer>
-          <div class="quotebox">
-            <div class="quote">
-              <h6>"You could have been anywhere in the world, but you're here with me. I appreciate that."</h6>
-            </div>
-            <h6 class="boldh6"><strong>Jay-Z</strong></h6>
-          </div>
+        <blockquote> You could have been anywhere in the world, but you're here with me. I appreciate that.
+                <span>Jay-Z</span>
+        </blockquote>
           <div class="wannatalk">
-            <h5> Wanna talk UX? Question about a project? Favorite rap lyric
+            <h5> Wanna talk <span class="wanna-text">UX</span>? Question about a <span class="wanna-text">project</span>? Favorite <span class="wanna-text">rap lyric</span>
             you wanna share? Great! Find me at my favorite web hangouts
             below and let's connect.</h5>
           </div>
@@ -81,5 +80,6 @@
           </ul>
           <p class="copyright">© 2019 Jonathan Guzman  |  designed and developed by Jonathan Guzman</p>
       </footer>
+    </div>
   </body>
 </html>

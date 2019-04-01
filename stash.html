@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/stash.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif400,500,600,700,800|Poppins400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+    <link rel="stylesheet" href="css/grid-gallery.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
   </head>
@@ -24,7 +25,7 @@
           <input class="menu-btn" type="checkbox" id="menu-btn">
           <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
           <ul class="navLinks">
-                <li class="navlink"><a href="#projects">PROJECTS</a></li>
+                <li class="navlink"><a class="current" href="../index.html#projects">PROJECTS</a></li>
                 <li class="navlink"><a href="about.html">ABOUT</a></li>
                 <li class="navlink"><a href="https://drive.google.com/drive/folders/1bkBPrHbur2LVaDZZGyJWajCbKuKcUA94?usp=sharing" target="_blank">RESUME</a></li>
                 <li class="navlink"><a href="mailto:jon.guzman@gmail.com">CONTACT</a></li>
@@ -54,7 +55,7 @@
             <p>Through my survey research and interviews, I found that some people
               found their cloud storage options daunting. They associated these apps
               as more "businessy". They also didn't see a benefit
-              from them since they didn't use file storage daily. They stockpiled them in
+              from them since they didn't use file storage daily. They did however have a massive collection of images and stockpiled them in
               their text conversations, photo library and social media, but these
               places made it hard to find the right file when they needed it the most.
             </p>
@@ -62,7 +63,7 @@
           <section class="solution">
             <h4>Solution</h4>
             <p>Enter Stash.</p>
-            <p>Stash was created to store and organize the files people share the most- pictures, gifs, memes, videos and anything else they
+            <p>Stash was created to store and organize the files people share the most often- pictures, gifs, memes, videos and anything else they
             care about. It's easy to use, approachable and never takes itself too
             seriously. It organizes content automatically or allows users to
             do it for themselves. It's a modern solution for the even more modern
@@ -80,18 +81,24 @@
                 and what they enjoy about the service. I also wanted to get the opinions of cloud storage averters and discover what keeps them away from the current landscape of cloud offerings.</p>
               <div class="charts">
                 <h6> Survey Data </h6>
-                <canvas id="chart1" height="250px"></canvas>
-                <canvas id="chart2" height="250px"></canvas>
-                <canvas id="chart3" height="250px"></canvas>
+                <div class="chart-box">
+                  <canvas id="chart1" height="300px"></canvas>
+                </div>
+                <div class="chart-box">
+                  <canvas id="chart2" height="300px"></canvas>
+                </div>
+                <div class="chart-box">
+                  <canvas id="chart3" height="300px"></canvas>
+                </div>
               </div>
               <div class="info_card">
                 <h6> Survey Highlights</h6>
                 <ul>
-                  <li>Users overwhelmingly voted "Ease of Use" as their favorite feature of thier cloud storage</li>
-                  <li>83% of users value “Uploading Files” and “Category Organization” as their top 2 most important feature for cloud storage</li>
-                  <li>“Content Creation” ranked last in features users would enjoy about cloud storage</li>
-                  <li>75% of survey partcipants state they use cloud storage for personal files</li>
-                  <li>Nearly 1/5 of participants stated they didn't use cloud storage at all</li>
+                  <li>Users overwhelmingly voted <span class="highlights">"Ease of Use"</span> as their favorite feature of thier cloud storage</li>
+                  <li><span class="highlights">83%</span> of users value “Uploading Files” and “Category Organization” as their top 2 most important feature for cloud storage</li>
+                  <li><span class="highlights">“Content Creation”</span> ranked last in features users would enjoy about cloud storage</li>
+                  <li><span class="highlights">75%</span> of survey partcipants state they use cloud storage for personal files</li>
+                  <li>Nearly <span class="highlights">1/5</span> of participants stated they didn't use cloud storage at all</li>
                 </ul>
               </div>
               <div class="button">
@@ -99,36 +106,38 @@
               </div>
             </section>
             <section class="comp-analysis">
-              <h5>Competetive Analysis</h5>
+              <h5>Competitive Analysis</h5>
               <p>The competitive analysis was instrumental to my process. Dropbox was
                 too enterprise focused, Google Drive is bloated with features and Pinterest
                 although simple to use, does not support all file types. Taking account of the research so far, I was able to combine
                 the best features of existing cloud storage, address their opportunities
                 and create an ideal solution: an approachable, easy to use application
                 that helped users categorize and upload all their files.</p>
-              <div class="info_card">
-                <img src="images/pinterest.png">
-                <h6>Pinterest</h6>
-                <p> + Visually appealing <br>
-                    + Simple Organization <br>
-                    - Lacks support for all file types <br>
-                    - Lack of file view options <br>
-              </div>
-              <div class="info_card">
-                <img src="images/dropbox.png">
-                <h6>Dropbox</h6>
-                <p> + Holds biggest market-share<br>
-                    + Variety of sharing options <br>
-                    - Only 2GB free storage <br>
-                    - Too enterprise focused <br>
-              </div>
-              <div class="info_card">
-                <img src="images/googledrive.png">
-                <h6>Google Drive</h6>
-                <p> + 15GB free storage<br>
-                    + Free document creating tools <br>
-                    - Privacy concerns <br>
-                    - Google product ecosystem <br>
+              <div class="comp-grid">
+                <div class="info_card dropbox">
+                  <img src="images/dropbox.png">
+                  <h6>Dropbox</h6>
+                  <p><span class="positives"> + </span>Holds biggest market-share<br>
+                     <span class="positives"> + </span>Variety of sharing options <br>
+                     <span class="negatives"> - </span>Only 2GB free storage <br>
+                     <span class="negatives"> - </span>Too enterprise focused <br>
+                </div>
+                <div class="info_card google">
+                  <img src="images/googledrive.png">
+                  <h6>Google Drive</h6>
+                  <p><span class="positives"> + </span>15GB free storage<br>
+                     <span class="positives"> + </span>Free document creating tools <br>
+                     <span class="negatives"> - </span>Privacy concerns <br>
+                     <span class="negatives"> - </span>Google product ecosystem <br>
+                </div>
+                <div class="info_card pinterest">
+                  <img src="images/pinterest.png">
+                  <h6>Pinterest</h6>
+                  <p><span class="positives"> + </span>Visually appealing <br>
+                     <span class="positives"> + </span>Simple Organization <br>
+                     <span class="negatives"> - </span>Lacks support for all file types <br>
+                     <span class="negatives"> - </span>Lack of file view options <br>
+                </div>
               </div>
               <div class="button">
                 <a href="https://docs.google.com/document/d/1HpDdRaKMTTk-yKvYYytaJkBO_FSykhba-QiVgjrcVIk/edit?usp=sharing" target="_blank"><input class="CaseButton" type="button" value="VIEW COMP ANALYSIS"></a>
@@ -136,46 +145,47 @@
             </section>
             <section class="user-personas">
               <h5>User Personas</h5>
-              <p>The goal of any persona is to humanize data in a menainful way. Data helped create two personas to drive the project further. One persona was frustrated by forgetting where files were located while the other was overwhelmed with the amount of files and lack of organization.
-
-              <div class="info_card">
-                <img src="images/stash-persona1.png">
-                <h6>Chloe</h6>
-                <p class="smalldetails">22 / Single <br>
-                  Retail Specialist San Francisco, CA</p>
-                <h6 class="personah6"> Motivations</h6>
-                <p>Chloe practically lives on her mobile device and relies on it for constant
-                  communication with her friends. She loves Instagram and Snapchat
-                  but stays away from iCloud. She often communicates with images,
-                  gifs and memes with her friends that she saves from the internet.
-                  But when it comes time to reply, sometimes she can’t find the
-                  right file and ends up downloading or screenshotting the same
-                  content over again. She recieves daily messages about her
-                  storage being almost full.</p>
-                <h6 class="personah6">Frustrations</h6>
-                <p>Chloe is stressed from the daily chore of making space in her
-                  phone because she takes too many screenshots. She is also weary
-                  of storage applications which have let her down in the past. Often she is frustrated
-                  becuase she has to look in many places to find a particular file.</p>
-                <h6>“I have so much stuff I don't know where any of it is”</h6>
-              </div>
-              <div class="info_card">
-                <img src="images/stash-persona2.png">
-                <h6>Raymond</h6>
-                <p class="smalldetails">29 / Single <br> Marketing Manager Oakland, CA</p>
-                <h6 class="personah6">Motivations</h6>
-                <p>Raymond is a marketing manager who leads a very busy life. He works out every morning around 6am. When he gets to work, he
-                  has a team which he manages, and relies on them heavily to keep
-                  tasks organized. When he gets home, he often doesn't have time to cook, so he
-                  loves the convenience of food delivery apps and orders it several times a
-                  week.  His personal life usually falls second to his work life, and he falls through on his committments to friends. </p>
-                <h6 class="personah6">Frustrations</h6>
-                <p>Swamped with too many time commitments files pile up quickly
-                  for Raymond. He ends up spending too much time looking for files
-                  and organizing things. He wishes that his files could be organized
-                  for him in some way.</p>
-                <h6>“It would be amazing to have things
-                  work automatically”</h6>
+              <p>The goal of any persona is to humanize data in a meaningful way. Data helped create two personas to drive the project further. One persona was frustrated by forgetting where files were located while the other was overwhelmed with the amount of files and lack of organization.
+              <div class= "persona-grid">
+                <div class="info_card">
+                  <img src="images/stash-persona1.png">
+                  <h6 class="persona-name">Chloe</h6>
+                  <p class="smalldetails">22 / Single <br>
+                    Retail Specialist San Francisco, CA</p>
+                  <h6 class="personah6"> Motivations</h6>
+                  <p>Chloe practically lives on her mobile device and relies on it for constant
+                    communication with her friends. She loves Instagram and Snapchat
+                    but stays away from iCloud. She often communicates with images,
+                    gifs and memes with her friends that she saves from the internet.
+                    But when it comes time to reply, sometimes she can’t find the
+                    right file and ends up downloading or screenshotting the same
+                    content over again. She recieves daily messages about her
+                    storage being almost full.</p>
+                  <h6 class="personah6">Frustrations</h6>
+                  <p>Chloe is stressed from the daily chore of making space in her
+                    phone because she takes too many screenshots. She is also weary
+                    of storage applications which have let her down in the past. Often she is frustrated
+                    becuase she has to look in many places to find a particular file.</p>
+                  <h6 class="persona-quote">“I have so much stuff I don't know where to find it”</h6>
+                </div>
+                <div class="info_card">
+                  <img src="images/stash-persona2.png">
+                  <h6 class="persona-name">Raymond</h6>
+                  <p class="smalldetails">29 / Single <br> Marketing Manager Oakland, CA</p>
+                  <h6 class="personah6">Motivations</h6>
+                  <p>Raymond is a marketing manager who leads a very busy life. He works out every morning around 6am. When he gets to work, he
+                    has a team which he manages, and relies on them heavily to keep
+                    tasks organized. When he gets home, he often doesn't have time to cook, so he
+                    loves the convenience of food delivery apps and orders it several times a
+                    week.  His personal life usually falls second to his work life, and he falls through on his committments to friends. </p>
+                  <h6 class="personah6">Frustrations</h6>
+                  <p>Swamped with too many time commitments files pile up quickly
+                    for Raymond. He ends up spending too much time looking for files
+                    and organizing things. He wishes that his files could be organized
+                    for him in some way.</p>
+                  <h6 class="persona-quote">“It would be amazing to have things
+                    work automatically”</h6>
+                </div>
               </div>
             </section>
             <section class="user-flows-and-stories">
@@ -198,7 +208,7 @@
                   <div class="swiper-pagination"></div>
 
                   <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-prev" style="background:rgb(28 28 28 0.2), color:#fbfbfb;"></div>
                   <div class="swiper-button-next"></div>
 
                   <!-- If we need scrollbar -->
@@ -245,15 +255,27 @@
             </section>
             <section class="branding_and_identity">
               <h5>Branding & Identity</h5>
-              <p> I started my branding sketches focusing on the cloud
-                aspect. Feedback from peers and industry
-                professionals suggested I focus on the storage aspect instead,
+              <p> I started my branding sketches focusing on the sharing
+                aspect. This led to my first few sketches which led me to the name "Ever Share." With feedback from peers and industry
+                professionals, they weren't in love with the idea and it was a little to close to a competitor's name. They suggested I focus on the storage aspect instead,
                 since users seemed to gel with this concept more. I used a mind
                 map, and a word association list and worked hard to create a name
                 that reminded people how easy it can be to store things. Below,
                 you can see how I ditched  “Breeze Bin” and “Cinch Stash” and went
                 with a much simpler name: Stash. It's a great feeling when you land on a name and it just fits.</p>
-              <img src="images/stash-brandingsketches.svg">
+              <div class="gg-box">
+                <img src="images/stash-brandingsketches-es-mindmap.png">
+                <img src="images/stash-brandingsketches-es-wordlist.png">
+                <img src="images/stash-brandingsketches-es1.png">
+                <img src="images/stash-brandingsketches-mindmap.png">
+                <img src="images/stash-brandingsketches-wordlist.png">
+                <img src="images/stash-brandingsketches2.png">
+              </div>
+              <div id="gg-screen" hidden></div>
+              <p>From my inital sketches, I really enjoyed the drawer concept and created two slightly different versions. With both designs side by side, I made the decision to go with
+                concept #2 because it’s rounded font and drawer details
+                delivered on the friendly easy-going vibe I wanted for the
+                brand.</p><br>
               <div class="logo-wrapper">
                 <div class=logoconcept>
                   <img src="images/stash-logoconcept1.svg">
@@ -264,18 +286,15 @@
                   <figcaption>Logo Concept 2</figcaption>
                 </div>
               </div>
-              <p>With both designs side by side, I made the decision to go with
-                concept #2 because it’s rounded font and drawer details
-                delivered on the friendly easy-going vibe I wanted for the
-                brand.<br> <br> Small changes then were made to the logo to help
-                tighten up the design. Below you can see slight changes to size
-                and kerning of the font, spacing of the words relative to the
+              <p>Small changes then were made to the logo to help
+                tighten up the design. Most notably the logo font size
+                and kerning, spacing of the words relative to the
                 drawer icon and shortening drawer width to match the length of
                 the words. They may seem like tiny changes, but these litte
                 details make a lasting impression that will represent the brand
-                of this company for years to come.</p>
-              <div class="compare-images">
-                <img src="images/stash-logocompare.svg">
+                of this company for years to come.</p><br>
+              <div class="before-after">
+                <img src="images/stash-logogif.gif">
               </div>
               <p>To get a sense of certain aspects of the color, design, voice and
                 typography I created a style guide. I took care to choose a
@@ -288,7 +307,9 @@
                 goal, completing expense reports, etc..), Stash has a much
                 smaller goal: a place to store the stuff users care about so
                 that they can quickly find it and share it.</p>
-              <img src="images/stash-styleguide.svg">
+              <div class="style-guide">
+                <img src="images/stash-styleguide.svg">
+              </div>
               <div class="button">
                 <a href="https://drive.google.com/open?id=1kvDnnSnq5lUx30kOT9xFnfboN9MdFI1b" target="_blank"><input class="CaseButton" type="button" value="VIEW STYLE GUIDE"></a>
               </div>
@@ -297,10 +318,13 @@
                 the app. Quirky and fun design inspirations helped convey the
                 important emotions- joy, playfulness, and fun</p>
               <div class="flex-moodboard">
-                <div class="squares"><img src="images/stash-moodboard4.gif">
-                     <img src="images/stash-moodboard2.gif"></div>
-                <div><img src="images/stash-moodboard3.png"></div>
-                <div><img src="images/stash-moodboard1.png"></div>
+                <div><img class="mood1" src="images/stash-moodboard4.gif"></div>
+                <div><img class="mood2" src="images/stash-moodboard2.gif"></div>
+                <div><img class="mood3" src="images/stash-moodboard3.png"></div>
+                <div><img class="mood4" src="images/stash-moodboard1.png"></div>
+                <img class="mood5" src="images/stash-moodboard5.png">
+                <img class="mood6" src="images/stash-moodboard6.png">
+                <img class="mood7" src="images/stash-moodboard7.jpg">
               </div>
               <div class="button">
                 <a href="https://projects.invisionapp.com/boards/U43N5H2JN7E/" target="_blank"><input class="CaseButton" type="button" value="VIEW MOODBOARD"></a>
@@ -308,81 +332,65 @@
             </section>
             <section class="user-testing">
               <h5>User Testing</h5>
-              <p>While the idea of Stash was good, preference testing and honest
-              feedback was essential in making big changes. Users told me when
-              they were confused, when they enjoyed something or when I flat out
-              missed the mark. Their feedback helped create significant changes.</p>
+              <p>At this point it was time to put rubber to the road and create
+                high fidelity mockups. I ran user tests in person and remotely
+                to gather data on its usability. The first version of Stash was
+                 too sparce and its scale was a little out of proportion. I was also a
+                 bit inconsistent with my use of color. One partcipant gave feedback
+                 about notices and their positioning, and how it was too obtrusive.
+                 I implemented changes to my prototype and incorporated their
+                 feedback to create the app Stash is today.
+                 I provided some before and after images to give you an idea of
+                 how the design process evolved over time.
+
+               </p>
               <div class="info_card">
                 <h6>User Test Highlights</h6>
                 <ul>
-                  <li>Added colored navigation bar on homepage to create some
+                  <li>Added <span class="highlights"> colored navigation bar</span> on homepage to create some
                     variety to the mostly white design</li>
-                  <li>Created more visually interesting graphics based on some
+                  <li>Created more <span class="highlights">visually interesting graphics</span> based on some
                     users saying design was “too simple”</li>
-                  <li>Described some key features of Stash on homepage because some
+                  <li>Described some <span class="highlights">key features</span> on Stash homepage because some
                     users didn’t quite understand what Stash did</li>
-                  <li>Shortened the size of the footer because it was quite large
+                  <li>Shortened the <span class="highlights">size of the footer</span> because it was quite large
                     in comparison to the header</li>
-                  <li>Changed the placement of some of the navigation links to
+                  <li>Changed the placement of some of the <span class="highlights">navigation links</span> to
                     put more focus on sign in and sign up buttons</li>
                   <li>Used color and placement more strategically to better highlight
-                    calls to action, error states and notifications</li>
-                  <li>Made a less obtrusive notification banner that appeared at
-                    the top of the page instead of the middle of the page</li>
-                  <li>Shrunk the sidebar and changed its color to maintain
+                    <span class="highlights">calls to action, error states and notifications</span></li>
+                  <li><span class="highlights">Moved notification banner</span> to the top of the page instead of the middle
+                    to create let users still view their content while being notified</li>
+                  <li>Shrunk the <span class="highlights">sidebar</span> and changed its color to maintain
                     consitency across landing page and the dashboard</li>
-                  <li>Created more ways for users to change how they view their
-                    content in the dashboard</li>
+                  <li>Created more ways for users to <span class="highlights">change how they view their
+                    content</span> in the dashboard</li>
                 </ul>
               </div>
               <div class="hifi-comparison">
-                  <div class="info_card">
-                    <h6>Homepage</h6>
-                      <img src="images/stash-webhomepage1-2x.png">
-                      <img src="images/stash-webhomepage2-2x.png">
-                      <div class="labels">
-                        <p>before</p>
-                      </div>
-                      <div class="labels">
-                        <p>after</p>
-                      </div>
-                  </div>
-                  <div class="info_card">
-                    <h6> Sign Up </h6>
-                    <img src="images/stash-websignup1-2x.png">
-                    <img src="images/stash-websignup2-2x.png">
-                    <div class="labels">
-                      <p>before</p>
-                    </div>
-                    <div class="labels">
-                      <p>after</p>
-                    </div>
-                  </div>
-                  <div class="info_card">
-                    <h6> Sign In </h6>
-                    <img src="images/stash-websignin1-2x.png">
-                    <img src="images/stash-websignin2-2x.png">
-                    <div class="labels">
-                      <p>before</p>
-                    </div>
-                    <div class="labels">
-                      <p>after</p>
-                    </div>
-                  </div>
-                  <div class="info_card">
-                    <h6>Dashboard</h6>
-                    <img src="images/stash-webdashboard1-2x.png">
-                    <img src="images/stash-webdashboard2-2x.png">
-                    <div class="labels">
-                      <p>before</p>
-                    </div>
-                    <div class="labels">
-                      <p>after</p>
-                    </div>
-                  </div>
+                <h6>Homepage</h6>
+                <div class="gg-box">
+                  <img src="images/stash-webhomepage1-2x.png">
+                  <img src="images/stash-webhomepage2-2x.png">
                 </div>
+                <h6>Sign up</h6>
+                <div class="gg-box">
+                  <img src="images/stash-websignup1-2x.png">
+                  <img src="images/stash-websignup2-2x.png">
+                </div>
+                <h6>Sign In</h6>
+                <div class="gg-box">
+                  <img src="images/stash-websignin1-2x.png">
+                  <img src="images/stash-websignin2-2x.png">
+                </div>
+                <h6>Dashboard</h6>
+                <div class="gg-box">
+                  <img src="images/stash-webdashboard1-2x.png">
+                  <img src="images/stash-webdashboard2-2x.png">
+                </div>
+              </div>
               <div class="button">
-                <a href="https://invis.io/NQOKK2VRVK5"><input class="CaseButton" type="button" value="VIEW PROTOTYPE"></a>
+                <a href="https://invis.io/NQOKK2VRVK5" target="_blank"><input class="CaseButton" type="button" value="VIEW PROTOTYPE"></a>
               </div>
             </section>
           </section>
@@ -444,14 +452,11 @@
             </div>
         </section>
         <footer>
-            <div class="quotebox">
-              <div class="quote">
-                <h6>"You could have been anywhere in the world, but you're here with me. I appreciate that."</h6>
-              </div>
-              <h6 class="boldh6"><strong>Jay-Z</strong></h6>
-            </div>
+          <blockquote> You could have been anywhere in the world, but you're here with me. I appreciate that.
+                  <span>Jay-Z</span>
+          </blockquote>
             <div class="wannatalk">
-              <h5> Wanna talk UX? Question about a project? Favorite rap lyric
+              <h5> Wanna talk <span class="wanna-text">UX</span>? Question about a <span class="wanna-text">project</span>? Favorite <span class="wanna-text">rap lyric</span>
               you wanna share? Great! Find me at my favorite web hangouts
               below and let's connect.</h5>
             </div>
@@ -621,5 +626,6 @@
                  $(this).toggleClass('open');
                });
       </script>
+      <script src="js/grid-gallery.min.js"></script>
   </body>
 </html>
