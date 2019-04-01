@@ -540,6 +540,10 @@ blockquote span{
         display:flex;
       }
 
+      .hero {
+        padding-top:12rem;
+      }
+
       .words {
         max-width: 60rem;
       }
