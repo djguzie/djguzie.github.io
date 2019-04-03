@@ -138,9 +138,9 @@ nav a {
   cursor:pointer;
 }
 
-.logo-box img {
+/* .logo-box img {
   display:block;
-}
+} */
 
 .navbar li a:hover {
   color: #E06D69;
@@ -447,13 +447,16 @@ section img {
 .user-personas .info_card h6 {
   margin:0 auto;
   width:100%;
-  padding-bottom:1rem;
+  padding:3rem 0 1rem;
 }
 
 .user-personas .info_card p {
   width:100%;
   font-size: 1.4rem;
   margin: 0 auto;
+  line-height: 1.4;
+  padding-top:0;
+  padding-bottom:0;
 }
 
 p.smalldetails {
@@ -469,9 +472,7 @@ p.smalldetails {
 }
 
 .personah6 {
-  /* opacity: 0.8; */
   font-size: 1.4rem;
-  letter-spacing: 0.1em;
 }
 
 .persona-quote {
