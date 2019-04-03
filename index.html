@@ -20,9 +20,15 @@
         <input class="menu-btn" type="checkbox" id="menu-btn">
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="navLinks">
-              <li class="navlink"><a href="#projects">PROJECTS</a></li>
+          <li class="dropdown navlink">
+            <button class="dropbtn" onclick="myFunction()">PROJECTS</button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="stash.html">Stash</a>
+              <a href="blocjams.html">Bloc Jams</a>
+            </div>
+          </li>
               <li class="navlink"><a href="about.html">ABOUT</a></li>
-              <li class="navlink"><a href="https://drive.google.com/drive/folders/1bkBPrHbur2LVaDZZGyJWajCbKuKcUA94?usp=sharing" target="_blank">RESUME</a></li>
+              <li class="navlink"><a href="images/jguzmanuxresume.pdf" target="_blank">RESUME</a></li>
               <li class="navlink"><a href="mailto:jon.guzman@gmail.com">CONTACT</a></li>
         </ul>
       </nav>
@@ -47,7 +53,7 @@
                 <div class="project-info">
                     <h2>Stash</h2>
                     <h3>Cloud storage is boring. <br>Stash makes it fun.</h3>
-                    <a href="stash.html"><input class="CaseButton" type="button" value="View case study"></a>
+                    <a href="stash.html"><button class="CaseButton">View case study</button></a>
                 </div>
               </div>
             </div>
@@ -58,7 +64,7 @@
                     <div class="project-info">
                       <h2>Nintendo E-Shop</h2>
                       <h3>A redesign of the Nintendo Switch digital storefront</h3>
-                      <a href="nintendo.html"><input class="CaseButton" type="button" value="VIEW CASE STUDY"></a>
+                      <a href="nintendo.html"><button class="CaseButton">View case study</button></a>
                     </div>
                   </div>
                 </div>
@@ -71,7 +77,7 @@
                   <div class="project-info">
                     <h2>Bloc Jams</h2>
                     <h3>A responsive web media player built with jQuery</h3>
-                    <a href="blocjams.html"><input class="CaseButton" type="button" value="LEARN MORE"></a>
+                    <a href="blocjams.html"><button class="CaseButton">Learn More</button></a>
                   </div>
                 </div>
               </div>
@@ -114,6 +120,32 @@
           $(".overlay").toggleClass('is-visible');
           $(this).toggleClass('open');
         });
+    </script>
+    <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137735003-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-137735003-1');
     </script>
   </body>
 </html>

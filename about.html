@@ -10,22 +10,27 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,500,600,700,800,900|Poppins:400,500,600,700,800,900" rel="stylesheet">
   </head>
   <body>
-      <!--full-page container-->
-      <div class="container-grid">
-            <!--Top Navigation-->
-          <nav class="navbar">
-            <div class="logo-box">
-              <a href="index.html"><img src="../images/jguzmanlogo.svg" alt="JG"></a>
+    <div class="container-grid">
+        <!--Top Navigation-->
+      <nav class="navbar">
+        <div class="logo-box">
+          <a href="index.html"><img src="images/jguzmanlogo.svg" alt="JG"></a>
+        </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="navLinks">
+          <li class="dropdown navlink">
+            <button class="dropbtn" onclick="myFunction()">PROJECTS</button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="stash.html">Stash</a>
+              <a href="blocjams.html">Bloc Jams</a>
             </div>
-            <input class="menu-btn" type="checkbox" id="menu-btn">
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="navLinks">
-                  <li class="navlink"><a href="index.html#projects">PROJECTS</a></li>
-                  <li class="navlink"><a class="current" href="about.html">ABOUT</a></li>
-                  <li class="navlink"><a href="https://drive.google.com/drive/folders/1bkBPrHbur2LVaDZZGyJWajCbKuKcUA94?usp=sharing" target="_blank">RESUME</a></li>
-                  <li class="navlink"><a href="mailto:jon.guzman@gmail.com">CONTACT</a></li>
-            </ul>
-          </nav>
+          </li>
+              <li class="navlink"><a class="current" href="about.html">ABOUT</a></li>
+              <li class="navlink"><a href="images/jguzmanuxresume.pdf" target="_blank">RESUME</a></li>
+              <li class="navlink"><a href="mailto:jon.guzman@gmail.com">CONTACT</a></li>
+        </ul>
+      </nav>
       <section class="hero">
         <div class="about-me-pic">
           <img src="/images/aboutpic.png" alt="0">
@@ -81,5 +86,31 @@
           <p class="copyright">© 2019 Jonathan Guzman  |  designed and developed by Jonathan Guzman</p>
       </footer>
     </div>
+    <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137735003-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-137735003-1');
+    </script>
   </body>
 </html>
