@@ -75,7 +75,7 @@ h6 {
 
 p {
   font-family: 'PT Serif', serif;
-  padding: 2rem 1.6rem;
+  padding: 2rem 0;
   font-size: 1.8rem;
   line-height: 3.5rem;
 }
@@ -312,6 +312,7 @@ nav a {
 
 .CaseButton {
   border-style: none;
+  cursor: pointer;
   min-width: 20rem;
   flex-wrap:wrap;
   background-color: #E06D69;
@@ -324,7 +325,7 @@ nav a {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.65rem;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -337,8 +338,24 @@ nav a {
   /* background-color:  */
 }
 
-.nintendo h2, .blocjams h2 {
+.stash {
+  background-image: url("../images/stash-mini-banner.png");
+  background-color: rgba(0,0,0,0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200px;
+  position: relative;
+  width: 100%;
 }
+
+.stash-text {
+  grid-area:stash;
+  margin-right: 1.6rem;
+  position: relative;
+  top: 30%;
+  color: #fbfbfb;
+}
+
 
 .nintendo {
   background-image: url("../images/nintendo-mini-banner.png");
@@ -350,10 +367,18 @@ nav a {
   width: 100%;
 }
 
-.overlay {
+.overlay-stash {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  ".  stash ";
   z-index:1;
-  background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
+}
+
+.stash:hover {
+  background:color:rgba(0, 0, 0, 1);
 }
 
 .nintendo-text {
@@ -364,6 +389,8 @@ nav a {
   width:50%;
   color: #fbfbfb;
 }
+
+
 .other-projects .CaseButton {
   margin: 2rem 0 4rem;
   position: relative;
@@ -382,12 +409,21 @@ nav a {
 }
 
 .blocjams-text {
-  margin: 0 1.6rem;
+  grid-area:bloc;
+  margin-left: 10%;
   position: relative;
   top: 30%;
-  left: 0%;
-  width:60%;
   color: #fbfbfb;
+}
+
+.overlay-bloc {
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+  " bloc ";
+  z-index:1;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  height:100%;
 }
 
 
@@ -550,16 +586,17 @@ blockquote span{
         }
 
       .about-me-pic {
-        grid-area:"pic";
+        grid-area:pic;
       }
 
       .words {
         grid-area:words;
+        padding: 0 2rem;
       }
 
       .hero {
         display:grid;
-        grid-template-columns: auto 3fr auto auto;
+        grid-template-columns: auto 2fr 3fr auto;
         grid-template-areas:
         ". pic words .";
         max-width:120rem;
@@ -569,18 +606,19 @@ blockquote span{
         padding:0 0 2rem;
       }
 
+
       .nintendo-text {
         padding:2rem 0rem;
       }
 
-      .blocjams-text {
+      /* .blocjams-text {
         padding:2rem 0rem;
         margin: 0 1.6rem;
         position: relative;
         top: 10%;
         left: 34%;
         width: 50%;
-      }
+      } */
 
       .CaseButton {
         margin: 3rem 0 3rem 0;
