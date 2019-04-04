@@ -203,7 +203,6 @@ nav a {
     max-height: 0rem;
     transition: .3s ease-in-out;
     text-align: right;
-    /* z-index: 0; */
 }
 
 /*MENU ICON*/
@@ -289,7 +288,7 @@ nav a {
 
 .hero .location h5 {
   padding: 2rem 0 2rem 1rem;
-  vertical-align:middle;
+  align-self:center;
   font-weight: 400;
   font-size:1.2rem;
   color:#1c1c1c;
@@ -302,10 +301,25 @@ nav a {
 
 }
 
+.me {
+  position:relative;
+  width:100%;
+}
+
+
+.me img{
+  position: absolute;
+  z-index:-1;
+  bottom:-30rem;
+  right:1rem;
+  overflow:hidden;
+}
+
 /* ------Case study section!------- */
 
 main {
   margin: 0 auto;
+  z-index: 0;
 }
 
 #projects {
@@ -326,15 +340,16 @@ main {
 
 }
 
-.project-pic {
+.project-pic-container {
   grid-area: project-pic;
-  max-height: 35rem;
+  margin: 0 auto;
 }
 
-.project-pic img {
+.project-pic-container img {
   width:100%;
   margin:0 auto;
   padding:3rem;
+
 }
 
 .project-info {
@@ -347,7 +362,7 @@ main {
 }
 
 
-.stash .project-pic {
+.stash .project-pic-container {
     margin:0rem auto;
 }
 
@@ -355,12 +370,12 @@ main {
   background: linear-gradient(180deg, #FA9A1F 80%, rgba(250, 228, 31, 0) 120%);
 }
 
-.nintendo .project-pic {
+.nintendo .project-pic-container {
   object-fit: cover;
 
 }
 
-.nintendo .project-pic img{
+.nintendo .project-pic-container img{
   padding:0;
   position: relative;
   min-height: 30rem;
@@ -533,7 +548,7 @@ blockquote span{
         width: 70%;
       } */
 
-      .project-pic img{
+      .project-pic-container img{
         padding:2rem 4rem;
         max-width:50rem;
       }
@@ -597,15 +612,28 @@ blockquote span{
 
       }
 
+      .me {
+        grid-area:me;
+        text-align: center;
+      }
+
+      .me img{
+        position: relative;
+        z-index:-1;
+        bottom:0;
+        right:0;
+
+      }
+
       .hero {
         padding:12rem 0;
         display: grid;
         grid-auto-rows: auto;
         grid-template-columns: 1fr 6fr 4fr 1fr;
         grid-template-areas:
-        ".      hey-there      .    .     "
-        ".      ima           .     .     "
-        ".      loc           .    .     ";
+        ".      hey-there     me    .     "
+        ".      ima           me     .     "
+        ".      loc           me   .     ";
       }
 
       .hero h1 {
@@ -627,10 +655,9 @@ blockquote span{
 
       .project-grid {
         grid-template-columns: 1fr 3fr 3fr 1fr;
-        grid-auto-rows: 1fr;
+        grid-auto-rows: 35rem;
         grid-template-areas:
         ". project-info project-pic .";
-        max-height:35rem;
       }
 
       /* .stash {
@@ -643,10 +670,13 @@ blockquote span{
         padding: 4rem 0;
       }
 
-      .project-pic {
+      .project-pic-container {
         max-width:40rem;
-        max-height:35rem;
         align-self: center;
+      }
+
+      .project-pic-container img {
+        max-width: 45rem;
       }
 
       .CaseButton {
@@ -664,12 +694,13 @@ blockquote span{
       .hero {
         padding:16rem 0;
       }
-      .project-pic {
+
+      .project-pic-container {
         max-width: 60rem;
       }
 
-      /* .hero h5 {
-        width: 60%;
-        padding-top: 2rem;
-      } */
+      .stash .project-pic-container img {
+        padding:6rem;
+      }
+
 }

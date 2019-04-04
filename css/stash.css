@@ -103,7 +103,7 @@ strong{
   width:100%;
   justify-content: space-between;
   padding: 0 1.6rem;
-  /* display:flex; */
+  background-color: #52B098;
 }
 
 .navbar ul {
@@ -143,11 +143,11 @@ nav a {
 } */
 
 .navbar li a:hover, .navbar li a:focus {
-  color: #E06D69;
+  color: #1c1c1c;
 }
 
 .current {
-  color: #E06D69 !important;
+  color: #1c1c1c !important;
 }
 
 .navlink {
@@ -173,13 +173,13 @@ nav a {
 }
 
  .dropdown:hover .dropbtn, .dropbtn:focus {
-  color: #E06D69;
+  color: #1c1c1c;
 }
 
 .dropdown-content {
   display: none;
   position:relative;
-  background-color: #fbfbfb;
+  background-color: #4BBC9F;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   padding:1rem 0;
@@ -209,8 +209,8 @@ nav a {
 
 /*MENU*/
 .navbar .navLinks {
-    color: #1c1c1c;
-    background-color: #Fbfbfb;
+    color: #fbfbfb;
+    background-color: #52B098;
     display: block;
     max-height: 0rem;
     transition: .3s ease-in-out;
