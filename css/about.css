@@ -80,6 +80,11 @@ p {
   line-height: 3.5rem;
 }
 
+a {
+  text-decoration: none;
+  cursor:pointer;
+}
+
 strong{
   font-weight:bold;
 }
@@ -335,6 +340,10 @@ nav a {
 .CaseButton:hover {
   transform: scale(1.05);
   /* background-color:  */
+}
+
+.dj a{
+  color:#1c1c1c;
 }
 
 /*-----OTHER PROJECTS SECTION------*/

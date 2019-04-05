@@ -125,6 +125,7 @@ strong{
   padding:1rem;
   text-decoration: none;
   cursor: pointer;
+  color:#fbfbfb;
 }
 
 nav .logo-box {
@@ -311,7 +312,65 @@ nav a {
 
 /*----CASE STUDY TIME-----*/
 
-.summary, .problem, .solution {
+.extra-info {
+  padding:8rem 0;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  " design"
+  "deliver"
+  "specs";
+  background-color:#fbfbfb;
+  filter: drop-shadow(0 0 .25rem rgba(0,0,0,0.25));
+}
+
+ul.duration {
+  padding-bottom: 1rem !important;
+}
+
+.extra-title {
+  display:flex;
+  width:100%;
+  justify-content: center;
+}
+
+.extra-info i{
+  align-self: center;
+  padding-right:1rem;
+}
+
+.extra-info h4 {
+  padding-bottom: 0;
+}
+
+.extra-info .subheading {
+  /* text-align: center; */
+  font-weight:bold;
+}
+
+.extra-info ul {
+  padding: 0 1.6rem 4rem;
+  text-align:center;
+}
+
+.extra-info li {
+  line-height: 1.5;
+}
+
+.design-roles {
+  grid-area:design;
+}
+
+.deliverables {
+  grid-area:deliver;
+}
+
+.specifications {
+  grid-area:specs;
+  padding-bottom: 2rem;
+}
+
+.summary, .problem, .solution{
   padding:8rem 0;
   width:100%;
   max-width:60rem;
@@ -349,6 +408,7 @@ section img {
   text-transform: uppercase;
   -webkit-appearance: none;
   transition: .3s all;
+  cursor:pointer;
 }
 
 .CaseButton:hover {
@@ -529,10 +589,18 @@ p.smalldetails {
   letter-spacing: 0;
 }
 
-.user-flows-and-stories {
+.user-flows {
   padding-top: 4rem;
 }
 
+.user-stories {
+  padding-top:4rem;
+}
+
+.user-stories strong{
+  color:#52B098;
+
+}
 /*-----SWIPER STUFF----*/
 
 .swiper-slide img{
@@ -544,20 +612,21 @@ p.smalldetails {
 
 .swiper-slide {
   background-color: #fff;
+  cursor: grab;
 }
 
-.swiper-wrapper {
+/* .swiper-wrapper {
   margin-bottom: 3rem;
-}
+} */
 
 .swiper-container {
   max-width:60rem;
+  padding:4rem 0 4rem 0 !important;
 }
 
 /*END OF SWIPER STUFF*/
-
-.user-flows-and-stories .CaseButton {
-  background-color: #52B098;
+.wireframes {
+  margin-top:8rem;
 }
 
 .wireframes .CaseButton {
@@ -596,15 +665,36 @@ p.smalldetails {
   background-color: #52B098;
 }
 
+.colors {
+  max-height:30rem;
+  object-fit: cover;
+  object-position: bottom;
+  margin:4rem 0;
+}
+
+.font-examples {
+  background-color:#fbfbfb;
+  filter: drop-shadow(0 0 .25rem rgba(0,0,0,0.25));
+  display:grid;
+  grid-template-columns: 1fr;
+  margin: 4rem 0 8rem;
+}
+
+.font-examples img{
+  padding: 1rem 0 1rem;
+}
+
 .style-guide {
-  margin:4rem auto;
+  margin: 4rem auto 0;
 }
 
 .flex-moodboard {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   margin: 4rem 0 2rem;
+  line-height: 0;
+
 }
 
 .flex-moodboard img {
@@ -658,6 +748,11 @@ p.smalldetails {
   display:inline-block;
   cursor:pointer;
   transition: .3s ease-out;
+}
+
+.chevronstuff a {
+    color:#fbfbfb;
+    text-decoration:none;
 }
 
 .chevronstuff:hover {
@@ -900,6 +995,7 @@ blockquote span{
 /*<--------Media Querries----->*/
 
 @media screen and (min-width:376px) and (max-width:767px) {
+
         .logo-wrapper {
           grid-template-columns: 6fr 6fr;
         }
@@ -928,19 +1024,18 @@ blockquote span{
           grid-area: mood6;
           height:100%;
         }
-        .mood7 {
+        /* .mood7 {
           grid-area: mood7;
           height:100%;
-        }
+        } */
 
         .flex-moodboard {
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+          grid-template-columns: 4fr 4fr;
           grid-template-areas:
           "mood1 mood2"
           "mood3 mood4"
-          "mood5 mood5"
-          "mood6 mood7";
+          "mood5 mood6";
           margin-bottom: 2rem;
         }
 
@@ -950,11 +1045,15 @@ blockquote span{
 }
 
 
-/*-------TEXT FIX FOR other projects section-----*/
-@media screen and (min-width:572px) and (max-width:767px) {
-      .nintendo-text {
-        top:30%;
-      }
+@media screen and (min-width:660px) and (max-width:848px) {
+
+        .extra-info {
+          display:grid;
+          grid-template-columns: 1fr 3fr 3fr 1fr;
+          grid-template-areas:
+          ". design deliver  ."
+          ". specs  deliver  .";
+        }
 }
 
 
@@ -1007,6 +1106,21 @@ blockquote span{
 
         .dropdown-content a {
           text-align: left;
+        }
+
+        .extra-info {
+          display:grid;
+          grid-template-columns: 5rem 2fr 2fr 2fr 5rem;
+          grid-template-areas:
+          ". design deliver specs .";
+        }
+
+        .deliverables ul{
+          padding-bottom:0;
+        }
+
+        .tools {
+          padding-bottom:0;
         }
 
       .charts {
@@ -1095,6 +1209,11 @@ blockquote span{
         max-width: 90rem;
       }
 
+      .font-examples {
+        grid-template-columns: 2fr 2fr 2fr;
+
+      }
+
       .style-guide {
         width:100%;
         max-width:60rem;
@@ -1132,12 +1251,11 @@ blockquote span{
 
       .flex-moodboard {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
-        grid-template-rows: 1fr 1fr 33%;
+        grid-template-columns: 4fr 4fr 4fr;
+        grid-template-rows: 30rem 30rem;
         grid-template-areas:
         "mood1 mood2 mood3"
-        "mood4 mood6 mood7"
-        "mood5 mood5 mood5";
+        "mood4 mood5 mood6";
         margin-bottom: 2rem;
       }
 
@@ -1157,12 +1275,12 @@ blockquote span{
         max-width:60rem;
       }
 
-      .other-projects {
+      /* .other-projects {
         display:grid;
         grid-template-columns: 4fr 4fr;
         grid-template-areas:
         "stash-grid blocjams-grid"
-      }
+      } */
 
       .overlay-nintendo {
         grid-template-columns: 1fr;
@@ -1185,6 +1303,12 @@ blockquote span{
 
       .hero {
         padding-top:4rem;
+      }
+
+      .extra-info {
+        width:100%;
+        margin: 0 auto;
+        padding: 8rem;
       }
 
       .charts {
@@ -1239,22 +1363,10 @@ blockquote span{
         max-width:90rem;
       }
 
-      .flex-moodboard {
-        grid-template-rows:1fr 1fr 48rem;
-      }
-
       .hifi-comparison .gg-box {
         max-width: 120rem;
         grid-gap:4rem;
         margin: 4rem auto 8rem auto;
       }
 
-
-
-}
-
-@media screen and (min-width:1144px) {
-      .nintendo-text {
-        top:30%;
-  }
 }
