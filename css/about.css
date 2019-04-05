@@ -293,6 +293,9 @@ nav a {
 }
 
 .about-me-pic {
+  display: flex;
+  margin:0 auto;
+  max-width: 40rem;
 }
 
 .hero img {
@@ -304,11 +307,6 @@ nav a {
   text-align: center;
 }
 
-/*-----OTHER PROJECTS SECTION------*/
-.other-projects {
-  width:100%;
-}
-
 
 .CaseButton {
   border-style: none;
@@ -318,7 +316,7 @@ nav a {
   background-color: #E06D69;
   color: #fbfbfb;
   height:auto;
-  margin: 4rem auto 8rem;
+  /* margin: 4rem auto 8rem; */
   padding: .75rem 2rem;
   text-decoration: none;
   filter: drop-shadow(0 0.25rem .25rem rgba(0,0,0,0.25));
@@ -338,28 +336,16 @@ nav a {
   /* background-color:  */
 }
 
+/*-----OTHER PROJECTS SECTION------*/
+.other-projects {
+  width:100%;
+
+}
+
 .stash {
+  grid-area: stash-grid;
   background-image: url("../images/stash-mini-banner.png");
-  background-color: rgba(0,0,0,0.5);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height:200px;
-  position: relative;
-  width: 100%;
-}
-
-.stash-text {
-  grid-area:stash;
-  margin-right: 1.6rem;
-  position: relative;
-  top: 30%;
-  color: #fbfbfb;
-}
-
-
-.nintendo {
-  background-image: url("../images/nintendo-mini-banner.png");
-  background-position: center;
+  background-color: #52B098;
   background-repeat: no-repeat;
   background-size: cover;
   height:200px;
@@ -369,35 +355,70 @@ nav a {
 
 .overlay-stash {
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 30% 1fr;
   grid-template-areas:
-  ".  stash ";
+  ". stash ";
   z-index:1;
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
+  opacity:0;
+  transition: .5s ease-in-out;
+  text-align: center;
 }
 
-.stash:hover {
-  background:color:rgba(0, 0, 0, 1);
+.stash-text {
+  color: #fbfbfb;
+  grid-area: stash;
+  margin: 0 auto 5rem;
+  position: relative;
+  text-align:left;
+  align-self: flex-end;
+}
+
+.overlay-stash:hover {
+  opacity:1;
+}
+
+.nintendo {
+  grid-area:nintendo-grid;
+  background-image: url("../images/nintendo-mini-banner.png");
+  background-color: #FA9B20;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200px;
+  position: relative;
+  width: 100%;
+}
+
+.overlay-nintendo {
+  display:grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-areas:
+  " . nintendo ";
+  z-index:1;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  height:100%;
+  opacity:0;
+  transition: .5s ease-in-out;
+  text-align:center;
 }
 
 .nintendo-text {
-  margin: 0 1.6rem;
+  grid-area:nintendo;
   position: relative;
-  top: 10%;
-  left: 34%;
-  width:50%;
+  margin: 0 auto 5rem;
   color: #fbfbfb;
+  text-align:left;
+  align-self: flex-end;
 }
 
-
-.other-projects .CaseButton {
-  margin: 2rem 0 4rem;
-  position: relative;
-  right:0%;
+.overlay-nintendo:hover {
+  opacity:1;
 }
 
 .blocjams {
+  grid-area:blocjams-grid;
   background-image: url("../images/blocjams-mini-banner.png");
   background-color: #D6423E;
   background-position: center;
@@ -410,20 +431,32 @@ nav a {
 
 .blocjams-text {
   grid-area:bloc;
-  margin-left: 10%;
+  margin: 0 auto 5rem;
   position: relative;
-  top: 30%;
   color: #fbfbfb;
+  text-align:left;
+  align-self: flex-end;
 }
 
-.overlay-bloc {
+.overlay-blocjams {
   display:grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr 30%;
   grid-template-areas:
-  " bloc ";
+  " bloc .";
   z-index:1;
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
+  opacity:0;
+  transition: .5s ease-in-out;
+  text-align:center;
+}
+
+.overlay-blocjams:hover {
+  opacity:1;
+}
+
+.other-projects h2 {
+  padding-bottom:1rem;
 }
 
 
@@ -587,6 +620,7 @@ blockquote span{
 
       .about-me-pic {
         grid-area:pic;
+        display:block;
       }
 
       .words {
@@ -606,29 +640,22 @@ blockquote span{
         padding:0 0 2rem;
       }
 
-
-      .nintendo-text {
-        padding:2rem 0rem;
-      }
-
-      /* .blocjams-text {
-        padding:2rem 0rem;
-        margin: 0 1.6rem;
-        position: relative;
-        top: 10%;
-        left: 34%;
-        width: 50%;
-      } */
-
-      .CaseButton {
-        margin: 3rem 0 3rem 0;
+      .hero p {
+        padding: 0 2rem;
       }
 
       .other-projects {
-        display:flex;
+        display:grid;
+        grid-template-columns: 4fr 4fr;
+        grid-template-areas:
+        "stash-grid blocjams-grid"
       }
 
-
+      .overlay-nintendo {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nintendo";
+      }
 
 }
 

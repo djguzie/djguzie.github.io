@@ -668,11 +668,42 @@ p.smalldetails {
   width:100%;
 }
 
-.nintendo h2, .blocjams h2 {
+.stash {
+  background-image: url("../images/stash-mini-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200px;
+  position: relative;
+  width: 100%;
+}
+
+.overlay-stash {
+  display:grid;
+  grid-template-areas:
+  " stash ";
+  z-index:1;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  height:100%;
+  opacity:0;
+  transition: .5s ease-in-out;
+}
+
+.stash-text {
+  color: #fbfbfb;
+  grid-area: stash;
+  padding: 5rem 10% 0 10%;
+  position: relative;
+  padding-top: 5rem;
+  padding-right: 10%;
+}
+
+.overlay-stash:hover {
+  opacity:1;
 }
 
 .nintendo {
   background-image: url("../images/nintendo-mini-banner.png");
+  background-color: #FA9B20;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -681,23 +712,28 @@ p.smalldetails {
   width: 100%;
 }
 
-.overlay {
+.overlay-nintendo {
+  display:grid;
+  grid-template-areas:
+  " nintendo ";
   z-index:1;
-  background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
+  opacity:0;
+  transition: .5s ease-in-out;
 }
 
 .nintendo-text {
-  margin: 0 1.6rem 0 0;
+  margin: 0 1.6rem;
   position: relative;
   top: 10%;
+  left: 34%;
+  width:50%;
   color: #fbfbfb;
-  padding-left: 37%;
 }
-.other-projects .CaseButton {
-  margin: 2rem 0 4rem;
-  position: relative;
-  right:0%;
+
+.overlay-nintendo:hover {
+  opacity:1;
 }
 
 .blocjams {
@@ -712,11 +748,32 @@ p.smalldetails {
 }
 
 .blocjams-text {
-  margin: 0 1.6rem;
-  position: absolute;
+  grid-area:bloc;
+  margin-left: 10%;
+  position: relative;
   top: 30%;
-  left:5%;
   color: #fbfbfb;
+}
+
+.overlay-blocjams {
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+  " bloc ";
+  z-index:1;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  height:100%;
+  opacity:0;
+  transition: .5s ease-in-out;
+}
+
+.overlay-blocjams:hover {
+  opacity:1;
+}
+
+.other-projects .CaseButton {
+  margin: 1rem 0 4rem;
+  position: relative;
 }
 
 
