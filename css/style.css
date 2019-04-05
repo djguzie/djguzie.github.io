@@ -119,6 +119,7 @@ strong{
   padding:1rem;
   text-decoration: none;
   cursor: pointer;
+  color:#1c1c1c;
 }
 
 nav .logo-box {
@@ -500,6 +501,10 @@ blockquote span{
   width:20%;
   text-align: center;
   transition: all 0.3s ease-in-out;
+}
+
+.socials li a {
+  color:#1c1c1c;
 }
 
 .socials li a:hover {
