@@ -370,6 +370,10 @@ ul.duration {
   padding-bottom: 2rem;
 }
 
+ul.tools {
+  padding-bottom:0rem !important;
+}
+
 .summary, .problem, .solution{
   padding:8rem 0;
   width:100%;
@@ -1054,6 +1058,8 @@ blockquote span{
           ". design deliver  ."
           ". specs  deliver  .";
         }
+
+
 }
 
 
@@ -1116,10 +1122,6 @@ blockquote span{
         }
 
         .deliverables ul{
-          padding-bottom:0;
-        }
-
-        .tools {
           padding-bottom:0;
         }
 
