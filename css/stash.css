@@ -526,6 +526,16 @@ section img {
 
 .user-surveys .CaseButton {
   background-color: #52B098;
+  margin:2rem auto 4rem;
+}
+
+.user-surveys .info_card {
+  padding:4rem 2rem 0rem;
+  margin-bottom: 8rem !important;
+}
+
+.user-surveys .info_card ul {
+  padding-bottom:0;
 }
 
 .info_card img {
@@ -600,6 +610,14 @@ p.smalldetails {
 .user-stories {
   padding-top:4rem;
 }
+
+.user-stories ul{
+  max-width: 60rem;
+  margin:0 auto;
+
+}
+
+
 
 .user-stories strong{
   color:#52B098;
@@ -721,6 +739,11 @@ p.smalldetails {
 
 .user-testing .CaseButton{
   margin-bottom: 0;
+}
+
+.user-testing .info_card ul {
+    max-width: 60rem;
+    margin:0 auto;
 }
 
 .conclusion {
@@ -1155,13 +1178,13 @@ blockquote span{
       .user-surveys .info_card {
         display:grid;
         grid-template-columns: 8fr;
-        /* max-width: 80%; */
         margin:0 auto;
-        padding:6rem 8rem;
+
       }
 
-      .user-surveys .info_card ul{
-        /* text-align: center; */
+      .user-surveys .info_card ul {
+        max-width: 60rem;
+        margin:0 auto;
       }
 
       .comp-grid {
@@ -1188,6 +1211,10 @@ blockquote span{
         display: grid;
         grid-template-columns: 4fr 4fr;
         grid-template-rows: 1fr;
+      }
+
+      .user-stories .info_card {
+        margin:4rem 0;
       }
 
       .swiper-slide img {
@@ -1328,10 +1355,6 @@ blockquote span{
 
       }
 
-      .user-surveys .info_card ul {
-        max-width: 60rem;
-        margin:0 auto;
-      }
 
       .comp-grid {
         display: grid;
