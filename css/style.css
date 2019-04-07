@@ -15,9 +15,9 @@ body {
   margin: 0;
 }
 
-a {
+/* a {
   all: unset;
-}
+} */
 
 .full-container {
   width:100%;
@@ -129,9 +129,9 @@ nav .logo-box {
   float:left;
 }
 
-nav a {
+/* nav a {
   cursor:pointer;
-}
+} */
 
 .logo-box img {
   display:block;
@@ -280,7 +280,7 @@ nav a {
 }
 
 .hero span {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .location {
