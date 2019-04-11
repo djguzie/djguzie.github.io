@@ -386,7 +386,7 @@ section img {
   width:100%;
   margin: 0 auto;
   object-fit: contain;
-  align-self:end;
+  /* align-self:end; */
 }
 
 .button {
@@ -818,7 +818,7 @@ p.smalldetails {
   z-index:1;
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
-  opacity:0;
+  opacity:1;
   transition: .5s ease-in-out;
   text-align: center;
 }
@@ -856,7 +856,7 @@ p.smalldetails {
   z-index:1;
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
-  opacity:0;
+  opacity:1;
   transition: .5s ease-in-out;
   text-align:center;
 }
@@ -903,7 +903,7 @@ p.smalldetails {
   z-index:1;
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
-  opacity:0;
+  opacity:1;
   transition: .5s ease-in-out;
   text-align:center;
 }
@@ -1403,6 +1403,18 @@ blockquote span{
         max-width: 120rem;
         grid-gap:4rem;
         margin: 4rem auto 8rem auto;
+      }
+
+      .overlay-stash {
+        opacity:0;
+      }
+
+      .overlay-nintendo {
+        opacity:0;
+      }
+
+      .overlay-blocjams {
+        opacity:0;
       }
 
 }

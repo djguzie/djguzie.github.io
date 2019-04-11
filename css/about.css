@@ -373,7 +373,7 @@ nav a {
   z-index:1;
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
-  opacity:0;
+  opacity:1;
   transition: .5s ease-in-out;
   text-align: center;
 }
@@ -411,7 +411,7 @@ nav a {
   z-index:1;
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
-  opacity:0;
+  opacity:1;
   transition: .5s ease-in-out;
   text-align:center;
 }
@@ -458,7 +458,7 @@ nav a {
   z-index:1;
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   height:100%;
-  opacity:0;
+  opacity:1;
   transition: .5s ease-in-out;
   text-align:center;
 }
@@ -651,7 +651,7 @@ blockquote span{
 
       .words {
         grid-area:words;
-        padding: 0 2rem;
+        padding: 0 0 0 2rem;
       }
 
       .hero {
@@ -663,11 +663,11 @@ blockquote span{
       }
 
       .hero h1 {
-        padding:0 2rem 2rem;
+        padding:0 0 2rem 2rem;
       }
 
       .hero p {
-        padding: 0 2rem;
+        padding: 0 0 0 2rem;
       }
 
       .other-projects {
@@ -694,11 +694,6 @@ blockquote span{
 
 @media screen and (min-width:1000px) {
 
-      h1 {
-        font-size: 9rem;
-        line-height: 1;
-      }
-
       .hero img {
         max-width:80rem;
         display:flex;
@@ -712,4 +707,23 @@ blockquote span{
         max-width: 60rem;
       }
 
+      .overlay-stash {
+        opacity:0;
+      }
+
+      .overlay-nintendo {
+        opacity:0;
+      }
+
+      .overlay-blocjams {
+        opacity:0;
+      }
+}
+
+@media screen and (min-width:1064px) {
+
+      h1 {
+        font-size: 9rem;
+        line-height: 1;
+      }
 }
