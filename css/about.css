@@ -75,7 +75,7 @@ h6 {
 
 p {
   font-family: 'PT Serif', serif;
-  padding: 2rem 0;
+  padding: 1rem 0;
   font-size: 1.8rem;
   line-height: 3.5rem;
 }
@@ -292,7 +292,7 @@ nav a {
 
 /*hero stuff*/
 .hero {
-  padding: 4rem 5%;
+  padding: 4rem 5% 7rem;
   width: 100%;
   max-width: 60rem;
   margin: 0 auto;
@@ -309,8 +309,9 @@ nav a {
 }
 
 .hero h1 {
-  padding:4rem 0 2rem;
-  text-align: center;
+  padding:4rem 0 0rem;
+  text-align: left;
+
 }
 
 
@@ -472,10 +473,19 @@ nav a {
 
 /* <!--QUOTE--> */
 
+
 footer {
     width:100%;
-    padding: 4rem 1.6rem 2rem;
+    padding: 8rem 1.6rem 2rem;
     background-color: #fcf4ef;
+}
+
+.fav-rappers {
+  font-weight:300;
+  margin:0 auto;
+  padding:0 0 2rem;
+  max-width:60rem;
+  text-align: left;
 }
 
 blockquote{
@@ -485,8 +495,8 @@ blockquote{
   margin:0 auto;
   font-style:italic;
   color: #1c1c1c;
-  padding:3rem 3rem 3rem 6rem;
-  border-left:.8rem solid #D6423E;
+  padding:3rem 6rem 3rem 10rem;
+  border-left:1rem solid #D6423E;
   line-height:1.6;
   position: relative;
   background:#FBFBFB;
@@ -498,20 +508,21 @@ blockquote::before{
   font-family:Arial, sans-serif;
   content: "“";
   color:#D6423E;
-  font-size:8rem;
+  font-size:16rem;
   position: absolute;
-  left: 2rem;
-  top:-1rem;
+  left: 1.5rem;
+  top:-5rem;
+  z-index:-2;
 }
 
 blockquote::after{
   font-family:Arial, sans-serif;
   content: "”";
   color:#D6423E;
-  font-size:8rem;
+  font-size:16rem;
   position: absolute;
   right: 1.5rem;
-  bottom: 1rem;
+  bottom: -8rem;
   padding:0 1rem;
 }
 
@@ -531,6 +542,7 @@ blockquote span{
 }
 
 .wannatalk h5 {
+  text-align:inherit;
   font-weight:300;
 }
 
@@ -562,11 +574,10 @@ blockquote span{
 }
 
 .copyright {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   padding:0;
 }
-
 
 
 /*<--------Media Querries----->*/
@@ -644,14 +655,14 @@ blockquote span{
 
       .hero {
         display:grid;
-        grid-template-columns: auto 2fr 3fr auto;
+        grid-template-columns: auto 3fr 3fr auto;
         grid-template-areas:
         ". pic words .";
         max-width:120rem;
       }
 
       .hero h1 {
-        padding:0 0 2rem;
+        padding:0 2rem 2rem;
       }
 
       .hero p {
@@ -670,6 +681,13 @@ blockquote span{
         grid-template-areas:
         "nintendo";
       }
+
+      /* blockquote {
+      padding:3rem 6rem 3rem 10rem;
+      }
+
+      blockquote::before{
+        left: 2rem; */
 
 }
 
