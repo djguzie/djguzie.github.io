@@ -358,6 +358,7 @@ nav a {
   grid-area: stash-grid;
   background-image: url("../images/stash-mini-banner.png");
   background-color: #52B098;
+  background-position: 45% center;
   background-repeat: no-repeat;
   background-size: cover;
   height:200px;
@@ -391,7 +392,45 @@ nav a {
   opacity:1;
 }
 
-.nintendo {
+.gamechanger {
+  grid-area:gamechanger-grid;
+  background-image: url("../images/gamechanger-mini-banner.png");
+  background-color: #A23030;
+  background-position: 45% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200px;
+  position: relative;
+  width: 100%;
+}
+
+.overlay-gamechanger {
+  display:grid;
+  grid-template-columns: 3% 1fr 2%;
+  grid-template-areas:
+  ". gamechanger .";
+  z-index:1;
+  background-color: rgba(0,0,0,0.5);
+  height:100%;
+  opacity:1;
+  transition: .5s ease-in-out;
+  text-align:center;
+}
+
+.gamechanger-text {
+  grid-area:gamechanger;
+  position: relative;
+  margin: 0 auto 5rem;
+  color: #fbfbfb;
+  text-align:left;
+  align-self: flex-end;
+}
+
+.overlay-gamechanger:hover {
+  opacity:1;
+}
+
+/* .nintendo {
   grid-area:nintendo-grid;
   background-image: url("../images/nintendo-mini-banner.png");
   background-color: #FA9B20;
@@ -409,7 +448,7 @@ nav a {
   grid-template-areas:
   " . nintendo ";
   z-index:1;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  background-color: rgba(0,0,0,0.5);
   height:100%;
   opacity:1;
   transition: .5s ease-in-out;
@@ -427,7 +466,7 @@ nav a {
 
 .overlay-nintendo:hover {
   opacity:1;
-}
+} */
 
 .blocjams {
   grid-area:blocjams-grid;
@@ -584,6 +623,11 @@ blockquote span{
 /*<--------Media Querries----->*/
 
 @media screen and (min-width:376px) and (max-width:767px) {
+  .overlay-gamechanger {
+    grid-template-columns: 1fr 10%;
+    grid-template-areas:
+    "gamechanger .";
+  }
 
 }
 
@@ -674,14 +718,31 @@ blockquote span{
         display:grid;
         grid-template-columns: 4fr 4fr;
         grid-template-areas:
-        "stash-grid blocjams-grid"
+        "gamechanger-grid gamechanger-grid"
+        "stash-grid blocjams-grid";
+
       }
 
-      .overlay-nintendo {
+      .overlay-gamechanger {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "gamechanger";
+      }
+
+      .stash {
+        background-size: unset;
+        background-position: 30%;
+      }
+
+      .blocjams {
+        background-size: unset;
+      }
+
+      /* .overlay-nintendo {
         grid-template-columns: 1fr;
         grid-template-areas:
         "nintendo";
-      }
+      } */
 
       /* blockquote {
       padding:3rem 6rem 3rem 10rem;
@@ -711,9 +772,13 @@ blockquote span{
         opacity:0;
       }
 
-      .overlay-nintendo {
+      .overlay-gamechanger {
         opacity:0;
       }
+
+      /* .overlay-nintendo {
+        opacity:0;
+      } */
 
       .overlay-blocjams {
         opacity:0;

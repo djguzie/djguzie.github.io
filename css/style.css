@@ -345,6 +345,7 @@ main {
 .project-pic-container {
   grid-area: project-pic;
   margin: 0 auto;
+  text-align: center;
 }
 
 .project-pic-container img {
@@ -359,6 +360,11 @@ main {
   grid-area: project-info;
 }
 
+.gamechanger .project-pic {
+  max-width:40%;
+  margin: 0 auto;
+}
+
 .stash {
   background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
 }
@@ -368,7 +374,23 @@ main {
     margin:0rem auto;
 }
 
-.nintendo {
+.gamechanger {
+  background: linear-gradient(180deg, #A23030 80%, #D6423E 120%);
+}
+
+.gamechanger .project-pic-container {
+  object-fit: cover;
+  min-width:35rem;
+}
+
+.gamechagner .project-pic-container img{
+  padding:0;
+  position: relative;
+  min-height: 30rem;
+
+}
+
+/* .nintendo {
   background: linear-gradient(180deg, #FA9A1F 80%, rgba(250, 228, 31, 0) 120%);
 }
 
@@ -382,10 +404,10 @@ main {
   position: relative;
   min-height: 30rem;
 
-}
+} */
 
 .blocjams {
-  background: linear-gradient(180deg, #D6423E 22.72%, #612854 110.86%);
+  background: linear-gradient(180deg, #612854 22.72%, #D6423E 110.86%);
 }
 
 .blocjams .project-pic {
@@ -541,6 +563,11 @@ blockquote span{
       .project-pic-container img{
         padding:2rem 4rem;
         max-width:50rem;
+      }
+
+      .gamechanger .project-pic-container {
+        min-width:50%;
+        max-width:70rem;
       }
 }
 

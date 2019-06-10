@@ -146,6 +146,7 @@ nav a {
 
 .navbar li a:hover, .navbar li a:focus {
   color: #1c1c1c;
+  font-weight:700;
 }
 
 .current {
@@ -648,6 +649,10 @@ p.smalldetails {
 }
 
 /*END OF SWIPER STUFF*/
+
+.branding_and_identity {
+  margin-top:8rem;
+}
 .wireframes {
   margin-top:8rem;
 }
