@@ -365,15 +365,6 @@ main {
   margin: 0 auto;
 }
 
-.stash {
-  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
-}
-
-
-.stash .project-pic-container {
-    margin:0rem auto;
-}
-
 .gamechanger {
   background: linear-gradient(180deg, #A23030 80%, #D6423E 120%);
 }
@@ -387,7 +378,14 @@ main {
   padding:0;
   position: relative;
   min-height: 30rem;
+}
 
+.stash {
+  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
+}
+
+.stash .project-pic-container {
+  margin:0rem auto;
 }
 
 /* .nintendo {
@@ -546,6 +544,7 @@ blockquote span{
   font-size: 1.2rem;
   text-align: center;
   padding:0;
+  line-height: 1.4;
 }
 
 

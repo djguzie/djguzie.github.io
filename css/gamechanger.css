@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: #1c1c1c;
   font-family: Poppins, sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 56px;
   letter-spacing: -0.02em;
@@ -103,7 +103,7 @@ strong{
   width:100%;
   justify-content: space-between;
   padding: 0 1.6rem;
-  background-color: #52B098;
+  background-color: #A23030;
 }
 
 .navbar ul {
@@ -182,7 +182,7 @@ nav a {
 .dropdown-content {
   display: none;
   position:relative;
-  background-color: #4BBC9F;
+  background-color: #A23030;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   padding:1rem 0;
@@ -214,7 +214,7 @@ nav a {
 /*MENU*/
 .navbar .navLinks {
     color: #fbfbfb;
-    background-color: #52B098;
+    background-color: #A23030;
     display: block;
     max-height: 0rem;
     transition: .3s ease-in-out;
@@ -292,20 +292,25 @@ nav a {
 /* <!--HERO--> */
  .hero {
   padding: 8rem 0;
-  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
+  background: linear-gradient(180deg, #A23030 0%, #D6423E 120%);
+}
+
+.category-image {
+  text-align:center;
 }
 
 .hero img {
-  /* padding:2rem; */
-  margin: 0 auto;
+  max-width:15rem;
 }
 
-.hero h1, .hero h5 {
+.hero h1 {
   color:#fbfbfb;
+  margin-top:2rem;
 }
 
 .hero h5 {
   padding: 1rem 0 2rem 0;
+  color:#fbfbfb;
 }
 
 .hero .CaseButton {
@@ -422,15 +427,16 @@ section img {
   /* background-color:  */
 }
 
-.image_stash {
-  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
+.image_game {
+  background: linear-gradient(180deg, #A23030 0%, #D6423E 120%);
   width:100%;
   margin:0 auto;
   display: flex;
-  padding:2rem;
 }
 
-.image_stash img {
+.image_game img {
+  object-fit: cover;
+  object-position: 10% 20%;
   max-width:60rem;
   margin:0 auto;
 }
@@ -502,7 +508,6 @@ section img {
   background-color: #fbfbfb;
   filter: drop-shadow(0 0 .25rem rgba(0,0,0,0.25));
   padding: 4rem 2rem;
-  display: flex;
   flex-wrap: wrap;
   position: relative;
 }
@@ -523,11 +528,11 @@ section img {
 .highlights {
   font-size:2.4rem;
   font-weight:600;
-  color:#52B098;
+  color:#A23030;
 }
 
 .user-surveys .CaseButton {
-  background-color: #52B098;
+  background-color: #A23030;
   margin:2rem auto 4rem;
 }
 
@@ -557,7 +562,7 @@ section img {
 
 .comp-analysis .CaseButton {
   margin:0rem auto 8rem;
-  background-color: #52B098;
+  background-color: #A23030;
 }
 
 .positives {
@@ -585,6 +590,11 @@ section img {
   padding-bottom:0;
 }
 
+.user-personas .CaseButton {
+  margin-top:0;
+  background-color: #A23030;
+}
+
 p.smalldetails {
   line-height: 1.5rem;
   text-align: center;
@@ -609,9 +619,9 @@ p.smalldetails {
   padding-top: 4rem;
 }
 
-.user-stories {
+/* .user-stories {
   padding-top:4rem;
-}
+} */
 
 .user-stories ul{
   max-width: 60rem;
@@ -622,7 +632,7 @@ p.smalldetails {
 
 
 .user-stories strong{
-  color:#52B098;
+  color:#A23030;
 
 }
 /*-----SWIPER STUFF----*/
@@ -648,17 +658,41 @@ p.smalldetails {
   padding:4rem 0 4rem 0 !important;
 }
 
+.mobile-only-swiper-container {
+  max-width:30rem;
+}
+
 /*END OF SWIPER STUFF*/
+.user-flows .CaseButton {
+  background-color: #A23030;
+}
+
+.wireframes .CaseButton {
+  background-color: #A23030;
+}
+
+.wireframes {
+  padding-top:8rem;
+}
+
+.heatmap {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top:4rem;
+}
+
+.heatmap img {
+  border-width: 1px;
+  border-color: #1c1c1c;
+  border-style:solid;
+}
 
 .branding_and_identity {
   margin-top:8rem;
 }
-.wireframes {
-  margin-top:8rem;
-}
 
-.wireframes .CaseButton {
-  background-color: #52B098;
+.logo {
+  margin-top:8rem;
 }
 
 .logo-wrapper {
@@ -684,13 +718,31 @@ p.smalldetails {
   font-size:1.2rem;
 }
 
+.logo-examples {
+  background-color:#fbfbfb;
+  filter: drop-shadow(0 0 .25rem rgba(0,0,0,0.25));
+  display:grid;
+  grid-gap:1rem;
+  grid-template-columns: 1fr;
+  margin: 4rem 0;
+}
+
+.logo-examples img{
+  padding: 1rem 0 1rem;
+  max-width:80%;
+}
+
 .before-after {
   margin:4rem auto;
   max-width:60rem;
 }
 
 .branding_and_identity .CaseButton {
-  background-color: #52B098;
+  background-color: #A23030;
+}
+
+.color-and-typography {
+  margin-top:8rem;
 }
 
 .colors {
@@ -708,6 +760,10 @@ p.smalldetails {
   margin: 4rem 0 8rem;
 }
 
+.font1 {
+  grid-area:raleway;
+}
+
 .font-examples img{
   padding: 1rem 0 1rem;
 }
@@ -716,18 +772,34 @@ p.smalldetails {
   margin: 4rem auto 0;
 }
 
-.flex-moodboard {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  margin: 4rem 0 2rem;
-  line-height: 0;
-
+.styleguide .CaseButton {
+  background-color: #A23030;
 }
 
-.flex-moodboard img {
-  margin: 0 auto;
-  object-fit: cover;
+.mockup-wrapper {
+  width:100%;
+  display: grid;
+  grid-template-rows: auto;
+  max-width: 120rem;
+  margin: 1rem auto 0;
+}
+
+.mockupconcept {
+  margin:0 auto;
+  width: 50%;
+  max-width: 60rem;
+}
+
+.mockupconcept figcaption {
+  text-align:center;
+  color:#1c1c1c;
+  opacity:.7;
+  margin:.5rem 0 2rem;
+  font-size:1.2rem;
+}
+
+.hifimockups .CaseButton {
+  margin-top:2rem;
 }
 
 .labels {
@@ -743,6 +815,10 @@ p.smalldetails {
   max-width:40rem;
 }
 
+.user-testing {
+  margin-top:8rem;
+}
+
 .user-testing .CaseButton{
   margin-bottom: 0;
 }
@@ -750,6 +826,19 @@ p.smalldetails {
 .user-testing .info_card ul {
     max-width: 60rem;
     margin:0 auto;
+}
+
+.video-container {
+  max-width:100rem;
+  margin:0 auto;
+}
+
+.prototype .video-container {
+  max-width:30rem;
+}
+
+.prototype {
+  margin-top:8rem;
 }
 
 .conclusion {
@@ -808,6 +897,7 @@ p.smalldetails {
   grid-area: stash-grid;
   background-image: url("../images/stash-mini-banner.png");
   background-color: #52B098;
+  background-position: 45% center;
   background-repeat: no-repeat;
   background-size: cover;
   height:200px;
@@ -841,7 +931,8 @@ p.smalldetails {
   opacity:1;
 }
 
-.nintendo {
+
+/* .nintendo {
   grid-area:nintendo-grid;
   background-image: url("../images/nintendo-mini-banner.png");
   background-color: #FA9B20;
@@ -859,7 +950,7 @@ p.smalldetails {
   grid-template-areas:
   " . nintendo ";
   z-index:1;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  background-color: rgba(0,0,0,0.5);
   height:100%;
   opacity:1;
   transition: .5s ease-in-out;
@@ -877,7 +968,7 @@ p.smalldetails {
 
 .overlay-nintendo:hover {
   opacity:1;
-}
+} */
 
 .blocjams {
   grid-area:blocjams-grid;
@@ -922,9 +1013,8 @@ p.smalldetails {
 }
 
 .other-projects .CaseButton {
-  margin:0 0;
+  margin:0;
 }
-
 
 /* <!--QUOTE--> */
 
@@ -1032,10 +1122,21 @@ blockquote span{
   font-size: 1.2rem;
   text-align: center;
   padding:0;
+  line-height: 1.4;
 }
 
 
 /*<--------Media Querries----->*/
+
+@media screen and (min-width:375px) and (max-width: 999px) {
+      h1 {
+        font-size:5rem;
+      }
+
+      .mobile-only-swiper-container {
+        max-width:37.5rem;
+      }
+}
 
 @media screen and (min-width:376px) and (max-width:767px) {
 
@@ -1043,43 +1144,12 @@ blockquote span{
           grid-template-columns: 6fr 6fr;
         }
 
-        .mood1 {
-          grid-area: mood1;
-          height:100%;
-        }
-        .mood2 {
-          grid-area: mood2;
-          height:100%;
-        }
-        .mood3 {
-          grid-area: mood3;
-          height:100%;
-        }
-        .mood4 {
-          grid-area: mood4;
-          height:100%;
-        }
-        .mood5 {
-          grid-area: mood5;
-          height:100%;
-        }
-        .mood6 {
-          grid-area: mood6;
-          height:100%;
-        }
-        /* .mood7 {
-          grid-area: mood7;
-          height:100%;
-        } */
-
-        .flex-moodboard {
-          display: grid;
+        .mockup-wrapper {
           grid-template-columns: 4fr 4fr;
-          grid-template-areas:
-          "mood1 mood2"
-          "mood3 mood4"
-          "mood5 mood6";
-          margin-bottom: 2rem;
+        }
+
+        .prototype .video-container {
+          max-width:37.5rem;
         }
 
         .swiper-slide img{
@@ -1164,32 +1234,6 @@ blockquote span{
           padding-bottom:0;
         }
 
-      .charts {
-        display: grid;
-        grid-template-columns: 4fr 4fr;
-        grid-template-rows: auto 1fr 1fr;
-        grid-gap: 1rem;
-        grid-template-areas:
-        "title title"
-        "chart1 chart2"
-        "chart3 chart3";
-        max-width: 120rem;
-      }
-
-      #chart1 {
-        /* height:350px; */
-        max-width:40rem;
-      }
-
-      #chart2 {
-        /* height:350px; */
-        max-width:40rem;
-      }
-
-      #chart3 {
-        /* height:350px; */
-        max-width:40rem;
-      }
 
       .user-surveys .info_card {
         display:grid;
@@ -1249,14 +1293,19 @@ blockquote span{
         max-width: 50rem;
       }
 
+      .logo-examples {
+        grid-template-columns: 2fr 2fr 2fr;
+      }
+
       .logo-wrapper {
         grid-template-columns: 6fr 6fr;
         max-width: 90rem;
       }
 
       .font-examples {
-        grid-template-columns: 2fr 2fr 2fr;
-
+        grid-template-columns: 3fr 6fr 3fr;
+        grid-template-areas:
+        " .      raleway     . ";
       }
 
       .style-guide {
@@ -1264,44 +1313,17 @@ blockquote span{
         max-width:60rem;
       }
 
-      .mood1 {
-        grid-area: mood1;
-        height:100%;
-      }
-      .mood2 {
-        grid-area: mood2;
-        height:100%;
-      }
-      .mood3 {
-        grid-area: mood3;
-        object-fit: cover;
-        height:100%;
-      }
-      .mood4 {
-        grid-area: mood4;
-        height:100%;
-      }
-      .mood5 {
-        grid-area: mood5;
-        height:100%;
-      }
-      .mood6 {
-        grid-area: mood6;
-        height:100%;
-      }
-      .mood7 {
-        grid-area: mood7;
-        height:100%;
+
+      .mockup-wrapper {
+        grid-template-columns: 6fr 6fr;
+        max-width: 100rem;
       }
 
-      .flex-moodboard {
-        display: grid;
-        grid-template-columns: 4fr 4fr 4fr;
-        grid-template-rows: 30rem 30rem;
-        grid-template-areas:
-        "mood1 mood2 mood3"
-        "mood4 mood5 mood6";
-        margin-bottom: 2rem;
+      .mockupconcept {
+        padding: 0 1rem;
+        margin:0 auto;
+        width: 60%;
+        max-width: 50rem;
       }
 
       .user-testing .info_card {
@@ -1316,22 +1338,35 @@ blockquote span{
         margin-bottom:4rem;
       }
 
+      .prototype .video-container {
+        max-width:37.5rem;
+      }
+
       .hifi-comparison .gg-box {
         max-width:60rem;
       }
 
-      /* .other-projects {
+      .other-projects {
         display:grid;
         grid-template-columns: 4fr 4fr;
         grid-template-areas:
-        "stash-grid blocjams-grid"
-      } */
+        "stash-grid blocjams-grid";
+      }
 
-      .overlay-nintendo {
+      .stash {
+        background-size: unset;
+        background-position: 30%;
+      }
+
+      .blocjams {
+        background-size: unset;
+      }
+
+      /* .overlay-nintendo {
         grid-template-columns: 1fr;
         grid-template-areas:
         "nintendo";
-      }
+      } */
 
 
 }
@@ -1342,7 +1377,7 @@ blockquote span{
       }
 
       .hero img {
-        max-width:80rem;
+        max-width:20rem;
         display:flex;
       }
 
@@ -1368,9 +1403,7 @@ blockquote span{
       .user-surveys .info_card {
         display:grid;
         grid-template-columns: 8fr;
-
       }
-
 
       .comp-grid {
         display: grid;
@@ -1387,6 +1420,10 @@ blockquote span{
 
       .swiper-container {
         max-width:50vw;
+      }
+
+      .mobile-only-swiper-container {
+        max-width: 37.5rem;
       }
 
       .user-testing .info_card {
@@ -1414,9 +1451,10 @@ blockquote span{
         opacity:0;
       }
 
-      .overlay-nintendo {
+
+      /* .overlay-nintendo {
         opacity:0;
-      }
+      } */
 
       .overlay-blocjams {
         opacity:0;
