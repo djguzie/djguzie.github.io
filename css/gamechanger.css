@@ -626,10 +626,7 @@ p.smalldetails {
 .user-stories ul{
   max-width: 60rem;
   margin:0 auto;
-
 }
-
-
 
 .user-stories strong{
   color:#A23030;
@@ -667,6 +664,11 @@ p.smalldetails {
   background-color: #A23030;
 }
 
+.sitemap-pic {
+  max-width:60rem;
+  margin: 0 auto;
+}
+
 .wireframes .CaseButton {
   background-color: #A23030;
 }
@@ -675,8 +677,13 @@ p.smalldetails {
   padding-top:8rem;
 }
 
+.wireframes-container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
 .heatmap {
-  max-width: 80%;
+  max-width: 37.5rem;
   margin: 0 auto;
   padding-top:4rem;
 }
@@ -716,6 +723,16 @@ p.smalldetails {
   opacity:.7;
   margin-top:1rem;
   font-size:1.2rem;
+}
+
+.logo-sketches {
+  background-color:#fbfbfb;
+  filter: drop-shadow(0 0 .25rem rgba(0,0,0,0.25));
+  display:grid;
+  grid-gap:1rem;
+  grid-template-columns: 1fr;
+  margin: 4rem auto;
+  max-width:40rem;
 }
 
 .logo-examples {
@@ -1138,6 +1155,13 @@ blockquote span{
       }
 }
 
+@media screen and (min-width 550px) {
+  .branding_and_identity .info_card {
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+
 @media screen and (min-width:376px) and (max-width:767px) {
 
         .logo-wrapper {
@@ -1252,10 +1276,6 @@ blockquote span{
         grid-template-columns: 4fr 4fr;
         grid-template-rows: auto auto;
         /* grid-gap: 1rem; */
-        grid-template-areas:
-        "dropbox google"
-        "pinterest .";
-        max-width: 120rem;
         margin:0 auto;
       }
 
@@ -1267,9 +1287,24 @@ blockquote span{
         width:12rem;
       }
 
+      .mike {
+        grid-area:mike;
+      }
+
+      .javier {
+        grid-area:javier;
+      }
+
+      .sophie {
+        grid-area:sophie;
+      }
+
       .persona-grid {
         display: grid;
-        grid-template-columns: 4fr 4fr;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        grid-template-areas:
+        "mike mike javier javier"
+        ". sophie sophie .";
         grid-template-rows: 1fr;
       }
 
@@ -1294,6 +1329,10 @@ blockquote span{
       }
 
       .logo-examples {
+        grid-template-columns: 2fr 2fr 2fr;
+      }
+
+      .logo-sketches {
         grid-template-columns: 2fr 2fr 2fr;
       }
 
@@ -1407,14 +1446,15 @@ blockquote span{
 
       .comp-grid {
         display: grid;
-        grid-template-columns: 4fr 4fr 4fr;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
         grid-template-rows: auto auto;
-        grid-template-areas:
-        "dropbox google pinterest";
       }
 
       .persona-grid {
-        max-width:90rem;
+        grid-template-columns:4fr 4fr 4fr;
+        grid-template-areas:
+        "mike javier sophie";
+        max-width:120rem;
         margin:0 auto;
       }
 
