@@ -561,7 +561,7 @@ section img {
 }
 
 .comp-analysis .CaseButton {
-  margin:0rem auto 8rem;
+  margin:2rem auto 8rem;
   background-color: #A23030;
 }
 
@@ -642,7 +642,6 @@ p.smalldetails {
 }
 
 .swiper-slide {
-  background-color: #fff;
   cursor: grab;
 }
 
@@ -657,6 +656,7 @@ p.smalldetails {
 
 .mobile-only-swiper-container {
   max-width:30rem;
+  margin:0 auto;
 }
 
 /*END OF SWIPER STUFF*/
@@ -698,6 +698,23 @@ p.smalldetails {
   margin-top:8rem;
 }
 
+.brands {
+  margin:4rem 1.6rem;
+  background-color: #fbfbfb;
+  filter: drop-shadow(0 0 .25rem rgba(0,0,0,0.25));
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.branding_and_identity ul{
+  max-width:20rem;
+  line-height: 1.4;
+  margin:0 auto;
+}
+
+
+
 .logo {
   margin-top:8rem;
 }
@@ -732,7 +749,7 @@ p.smalldetails {
   grid-gap:1rem;
   grid-template-columns: 1fr;
   margin: 4rem auto;
-  max-width:40rem;
+  max-width:30rem;
 }
 
 .logo-examples {
@@ -745,6 +762,45 @@ p.smalldetails {
 }
 
 .logo-examples img{
+  padding: 1rem 0 1rem;
+  max-width:80%;
+}
+
+.final-logo-examples {
+  background-color:#A23030;
+  filter: drop-shadow(0 0 .25rem rgba(0,0,0,0.25));
+  display:grid;
+  grid-template-columns: 4fr 4fr;
+  grid-template-areas:
+  "final final"
+  "logo lockup";
+  grid-gap:1rem;
+  margin: 4rem 0;
+  align-items: center;
+  padding:2rem 30rem;
+}
+
+.final-logo-examples h6{
+  grid-area:final;
+  padding:2rem;
+  color:#fbfbfb;
+}
+
+.logomark {
+  grid-area:logo;
+  text-align: center;
+}
+
+.lockup {
+  grid-area:lockup;
+  text-align: center;
+}
+
+.figcaption {
+  align-items: flex-end;
+}
+
+.final-logo-examples img{
   padding: 1rem 0 1rem;
   max-width:80%;
 }
@@ -787,6 +843,11 @@ p.smalldetails {
 
 .style-guide {
   margin: 4rem auto 0;
+  display:grid;
+  grid-template-areas:
+  "one two"
+  "three four";
+  grid-gap:1px;
 }
 
 .styleguide .CaseButton {
@@ -1150,9 +1211,9 @@ blockquote span{
         font-size:5rem;
       }
 
-      .mobile-only-swiper-container {
-        max-width:37.5rem;
-      }
+      /* .mobile-only-swiper-container {
+        max-width:50rem;
+      } */
 }
 
 @media screen and (min-width 550px) {
@@ -1312,13 +1373,17 @@ blockquote span{
         margin:4rem 0;
       }
 
+      .brands {
+        margin:4rem 0rem;
+      }
+
       .swiper-slide img {
-        padding:0 8rem;
+        /* padding:0 8rem; */
         margin:0 auto;
       }
 
-      .swiper-container {
-        max-width:60rem;
+      .mobile-only-swiper-container .swiper-container {
+        max-width:40rem;
       }
 
       .logoconcept {
@@ -1334,6 +1399,8 @@ blockquote span{
 
       .logo-sketches {
         grid-template-columns: 2fr 2fr 2fr;
+        max-width:unset;
+
       }
 
       .logo-wrapper {
@@ -1462,9 +1529,9 @@ blockquote span{
         max-width:50vw;
       }
 
-      .mobile-only-swiper-container {
-        max-width: 37.5rem;
-      }
+      /* .mobile-only-swiper-container {
+        max-width: 50rem;
+      } */
 
       .user-testing .info_card {
         display:grid;
