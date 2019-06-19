@@ -307,6 +307,7 @@ nav a {
 
 .hero img {
   width:100%;
+  object-fit: cover;
 }
 
 .hero h1 {
