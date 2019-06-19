@@ -759,6 +759,7 @@ p.smalldetails {
   grid-gap:1rem;
   grid-template-columns: 1fr;
   margin: 4rem 0;
+  padding:2rem;
 }
 
 .logo-examples img{
@@ -766,18 +767,22 @@ p.smalldetails {
   max-width:80%;
 }
 
-.final-logo-examples {
+.final-logos {
   background-color:#A23030;
   filter: drop-shadow(0 0 .25rem rgba(0,0,0,0.25));
+}
+
+.final-logo-examples {
   display:grid;
   grid-template-columns: 4fr 4fr;
   grid-template-areas:
   "final final"
   "logo lockup";
   grid-gap:1rem;
-  margin: 4rem 0;
+  margin: 4rem auto;
   align-items: center;
-  padding:2rem 30rem;
+  padding:2rem;
+  max-width: 120rem;
 }
 
 .final-logo-examples h6{
@@ -1546,6 +1551,10 @@ blockquote span{
 
       .branding_and_identity .gg-box {
         max-width:90rem;
+      }
+
+      .final-logo-examples {
+        padding:2rem 20rem;
       }
 
       .hifi-comparison .gg-box {
