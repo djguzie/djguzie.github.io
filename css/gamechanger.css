@@ -431,14 +431,15 @@ section img {
   background: linear-gradient(180deg, #A23030 0%, #D6423E 120%);
   width:100%;
   margin:0 auto;
-  display: flex;
+  /* display: flex; */
 }
 
 .image_game img {
   object-fit: cover;
   object-position: 10% 20%;
-  max-width:60rem;
+  max-width:80rem;
   margin:0 auto;
+  display:flex;
 }
 
 .process {
