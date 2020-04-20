@@ -1466,12 +1466,12 @@ blockquote span{
       }
 
       .stash {
-        background-size: unset;
+        background-size: cover;
         background-position: 30%;
       }
 
       .blocjams {
-        background-size: unset;
+        background-size: cover;
       }
 
       /* .overlay-nintendo {
