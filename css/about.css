@@ -524,25 +524,25 @@ footer {
 .fav-rappers {
   font-weight:300;
   margin:0 auto;
-  padding:0 0 2rem;
+  padding:0 0 4rem;
   max-width:60rem;
   text-align: left;
 }
 
 blockquote{
-  font-size: 1.7rem;
+  font-size: 2.125rem;
   font-family: Poppins, sans-serif;
-  width:100%;
-  margin:0 auto;
-  font-style:italic;
+  width: 100%;
+  margin: 0 auto;
+  /* font-style: italic; */
   color: #1c1c1c;
-  padding:3rem 6rem 3rem 10rem;
-  border-left:1rem solid #D6423E;
-  line-height:1.6;
+  padding: 4rem 6rem 3rem 7rem;
+  border-left: 1rem solid #D6423E;
+  line-height: 1.5;
   position: relative;
-  background:#FBFBFB;
+  background: #FBFBFB;
   filter: drop-shadow(0 0.5rem .25rem rgba(0,0,0,0.25));
-  max-width:60rem;
+  max-width: 60rem;
 }
 
 blockquote::before{
@@ -746,12 +746,10 @@ blockquote span{
         "nintendo";
       } */
 
-      /* blockquote {
-      padding:3rem 6rem 3rem 10rem;
+      blockquote{
+        font-size:2.65rem;
+        padding:3rem 6rem 3rem 10rem;
       }
-
-      blockquote::before{
-        left: 2rem; */
 
 }
 
