@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.15rem;
+  font-size: 3.8rem;
   font-weight:600;
   line-height: 4.2rem;
   letter-spacing: -0.02em;
@@ -276,7 +276,7 @@ nav .logo-box {
 
 /*hero stuff*/
 .hero {
-  padding: 8rem 1.6rem;
+  padding: 4rem 1.6rem;
   max-width:100%;
 }
 
@@ -332,10 +332,10 @@ main {
   width: 100%;
 }
 
-.project-outer-grid {
+/* .project-outer-grid {
   display: grid;
   grid-template-rows:auto auto auto;
-}
+} */
 
 .project-grid {
   display: grid;
@@ -364,18 +364,22 @@ main {
   grid-area: project-info;
 }
 
+.mmi {
+  background:linear-gradient(180deg, #212E4E 60%, #7CCEBA 120%);
+}
+
 .gamechanger .project-pic {
   max-width:40%;
   margin: 0 auto;
 }
 
 .gamechanger {
-  background: linear-gradient(180deg, #A23030 80%, #D6423E 120%);
+  background: linear-gradient(180deg, #A23030 60%, #612854 120%);
 }
 
 .gamechanger .project-pic-container {
   object-fit: cover;
-  min-width:35rem;
+  /* min-width:35rem; */
 }
 
 .gamechagner .project-pic-container img{
@@ -385,7 +389,7 @@ main {
 }
 
 .stash {
-  background: linear-gradient(180deg, #52B098 0%, #1C2B61 113.42%);
+  background: linear-gradient(180deg, #52B098 60%, #1C2B61 120%);
 }
 
 .stash .project-pic-container {
@@ -409,7 +413,7 @@ main {
 } */
 
 .blocjams {
-  background: linear-gradient(180deg, #612854 22.72%, #D6423E 110.86%);
+  background: linear-gradient(180deg, #612854 60%, #A23030 120%);
 }
 
 .blocjams .project-pic {
@@ -464,9 +468,9 @@ blockquote{
   font-family: Poppins, sans-serif;
   width: 100%;
   margin: 0 auto;
-  /* font-style: italic; */
+  font-style: italic;
   color: #1c1c1c;
-  padding: 4rem 6rem 3rem 7rem;
+  padding: 4rem 6rem 4rem 8rem;
   border-left: 1rem solid #D6423E;
   line-height: 1.5;
   position: relative;
@@ -554,7 +558,20 @@ blockquote span{
 
 /*<--------Media Querries----->*/
 
+@media screen and (min-width:375px){
+    h2 {
+      font-size: 4.15rem;
+  }
 
+    .hero {
+      padding: 8rem 1.6rem;
+  }
+
+  blockquote{
+    padding:4rem 6rem 4rem 10rem;
+  }
+
+}
 
 
 @media screen and (min-width:376px) and (max-width:767px) {
@@ -712,10 +729,6 @@ blockquote span{
         margin: 3rem 0 0rem;
       }
 
-      blockquote{
-        font-size:2.65rem;
-        padding:3rem 6rem 3rem 10rem;
-      }
 
 }
 
